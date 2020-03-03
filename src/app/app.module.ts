@@ -2,18 +2,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DuThemeModule } from './du-theme/du-theme.module';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
+import { ServicesComponent } from './services/services.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    DuThemeModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      HomeComponent,
+      ContactComponent,
+      TechnologiesComponent,
+      ServicesComponent,
+      AboutComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule
+   ],
+   providers: [],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }

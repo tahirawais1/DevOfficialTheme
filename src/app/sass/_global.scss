@@ -99,6 +99,9 @@ color: $button-bg-color;
 .white-background {
     background-color: $white-color;
 }
+.secondary-bg {
+    background-color: $secondary-color;
+}
 
 .link-background{
     background-color: $link-color;
@@ -134,7 +137,9 @@ color: $button-bg-color;
 .blue-bg{
     background-color: $blue-color;
 }
-
+.opacityBG{
+    background-color: $opacity-bg;
+}
 
 /*//////////////////////////////////////////////////////
 
@@ -603,6 +608,20 @@ color: $button-bg-color;
 
 
 
+.tubtn{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px solid transparent;
+    align-items: center;
+    
+}
+
+.tubtn:focus{
+   box-shadow:$success-box-shadow;
+   border-radius: 4px;
+}
+
+   
 
 
 
