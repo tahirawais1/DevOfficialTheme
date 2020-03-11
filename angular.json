@@ -130,6 +130,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "devTheme"
+    }
+  },
+  "defaultProject": "devTheme",
+  "cli": {
+    "analytics": "aa1d054a-f9e7-48c2-b3fc-1650db02990d"
+  }
 }

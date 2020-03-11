@@ -44,8 +44,16 @@
     {{item}}
   </div>
 </div>
-<div class="section p-l-40 bg-color p-r-40">
-  <h1 class="sec-h text-center f-300 sec-font ">{{data?.methodologyTitle}} </h1>
+<div *ngFor="let item of data?.moreSection" class="section p-l-40 bg-color p-r-40">
+  <h1 class="sec-h text-center f-300 sec-font "> {{item.tittle}}</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="main-p f-300 sec-font "> {{item.desc}}</h1>
+
+    </div>
+    <div class="col-sm-6 imgwid m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imgPath + ')'}">
+    </div>
+
+  </div>
 
 </div>
-

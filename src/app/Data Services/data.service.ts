@@ -70,12 +70,12 @@ export class DataService {
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
         proServices: ['SaaS', 'Supply Chain', 'Web', 'iOS', 'Android'],
         titlephoto: 'assets/content/work_cases/tu.png',
-        needText:'The Need',
+        needText: 'The Need',
         needParagraph:
-        ['Movingful is a marketplace where customers can book their moves online with intuitive and automated flows for different types of move bookings. The aim of the platform is to increase sale bookings and offload call-centre agents by replacing their manual work with automated flow in place.','Part of suite is also a commission management app that lets sponsors, ambassadors and agents share moves through the system and manage their sales commission and status of their bookings in real-time. They can further share their profit down their sub-agents and earn well while increasing sales booking for the company.'],
+          ['Movingful is a marketplace where customers can book their moves online with intuitive and automated flows for different types of move bookings. The aim of the platform is to increase sale bookings and offload call-centre agents by replacing their manual work with automated flow in place.', 'Part of suite is also a commission management app that lets sponsors, ambassadors and agents share moves through the system and manage their sales commission and status of their bookings in real-time. They can further share their profit down their sub-agents and earn well while increasing sales booking for the company.'],
         solutiontitle: 'WHICH BUSINESSES IT HELPS',
         solitem: [{
-          img:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' ,
+          img: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
           title: '', details:
             [
               'Help manufacturers keep track of their inventories, sales and payment recoveries across their trade partners in real-time. Help reduce inventory cost, reduce wastage, increase sales and eliminate the cost and headache of manual operation. ',
@@ -85,13 +85,18 @@ export class DataService {
               'Help top level management and business owners drive better business decisions with advanced reporting and intelligence across all business aspects.'
             ]
         }],
-        portfolioimage1:'assets/content/work_cases/tuportfolio4.png',
-        portfolioimage2:'assets/content/work_cases/tuportfolio3.png',
-        methodologyTitle:'HOW WE BUILT THE SYSTEM',
-        methodologyParagraph:['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
-        methodology:['Back office web application','Mobile application for field operations','Mobile app for advanced reporting and business intelligence','B2B e-commerce and marketplace platform'],
-        tech:'NativeScript',
-        techlogo:'assets/content/work_cases/nstu.png',
+        methodologyTitle: 'HOW WE BUILT THE SYSTEM',
+        methodologyParagraph: ['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
+        methodology: ['Back office web application', 'Mobile application for field operations', 'Mobile app for advanced reporting and business intelligence', 'B2B e-commerce and marketplace platform'],
+        moreSection: [
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+        ],
+        tech: 'NativeScript',
+        techlogo: 'assets/content/work_cases/nstu.png',
+        portfolioimage1: 'assets/content/work_cases/tuportfolio4.png',
+        portfolioimage2: 'assets/content/work_cases/tuportfolio3.png',
       },
       {
         id: 1,
@@ -102,13 +107,13 @@ export class DataService {
         techManager: 'Mr Zeeshan Aslam',
         proServices: ['SaaS', 'Recruitment', 'iOS', 'Android'],
         titlephoto: 'assets/content/work_cases/fhportfolio.png',
-        needText:'The Need',
+        needText: 'The Need',
         needParagraph:
-        ['Movingful is a marketplace where customers can book their moves online with intuitive and automated flows for different types of move bookings. The aim of the platform is to increase sale bookings and offload call-centre agents by replacing their manual work with automated flow in place.','Part of suite is also a commission management app that lets sponsors, ambassadors and agents share moves through the system and manage their sales commission and status of their bookings in real-time. They can further share their profit down their sub-agents and earn well while increasing sales booking for the company.'],
+          ['Movingful is a marketplace where customers can book their moves online with intuitive and automated flows for different types of move bookings. The aim of the platform is to increase sale bookings and offload call-centre agents by replacing their manual work with automated flow in place.', 'Part of suite is also a commission management app that lets sponsors, ambassadors and agents share moves through the system and manage their sales commission and status of their bookings in real-time. They can further share their profit down their sub-agents and earn well while increasing sales booking for the company.'],
         solutiontitle: 'One Solution, Two Products',
         solitem: [
           {
-            img:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' ,
+            img: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
             title: 'For Recruiters', details:
               [
                 'Job management ',
@@ -118,7 +123,7 @@ export class DataService {
               ]
           },
           {
-            img:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' ,
+            img: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
             title: 'For Candidates', details:
               [
                 'Online & real-time job matching ',
@@ -129,13 +134,19 @@ export class DataService {
               ]
           }
         ],
-        portfolioimage1:'assets/content/work_cases/fhportfolio.png',
-        portfolioimage2:'assets/content/work_cases/fhportfolio1.png',
-        methodologyTitle:'HOW WE BUILT THE SYSTEM',
-        methodologyParagraph:['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
-        methodology:'',
-        tech:'React Native',
-        techlogo:'assets/content/work_cases/clean-up/react-native-logo@2x-ab2c22364cf8131b683d5fe86bb396c0b046afb812add95e35a4781b77075d33.png',
+
+        methodologyTitle: 'HOW WE BUILT THE SYSTEM',
+        methodologyParagraph: ['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
+        methodology: '',
+        moreSection: [
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+        ],
+        tech: 'React Native',
+        techlogo: 'assets/content/work_cases/clean-up/react-native-logo@2x-ab2c22364cf8131b683d5fe86bb396c0b046afb812add95e35a4781b77075d33.png',
+        portfolioimage1: 'assets/content/work_cases/fhportfolio.png',
+        portfolioimage2: 'assets/content/work_cases/fhportfolio1.png',
       },
       {
         id: 2,
@@ -146,26 +157,31 @@ export class DataService {
         techManager: 'Mr Zeeshan Aslam',
         proServices: ['Web', 'Moving', 'Industry', 'USA'],
         titlephoto: 'assets/content/work_cases/mfportfolio.png',
-        needText:'The Need',
+        needText: 'The Need',
         needParagraph:
-        ['Movingful is a marketplace where customers can book their moves online with intuitive and automated flows for different types of move bookings. The aim of the platform is to increase sale bookings and offload call-centre agents by replacing their manual work with automated flow in place.','Part of suite is also a commission management app that lets sponsors, ambassadors and agents share moves through the system and manage their sales commission and status of their bookings in real-time. They can further share their profit down their sub-agents and earn well while increasing sales booking for the company.'],
+          ['Movingful is a marketplace where customers can book their moves online with intuitive and automated flows for different types of move bookings. The aim of the platform is to increase sale bookings and offload call-centre agents by replacing their manual work with automated flow in place.', 'Part of suite is also a commission management app that lets sponsors, ambassadors and agents share moves through the system and manage their sales commission and status of their bookings in real-time. They can further share their profit down their sub-agents and earn well while increasing sales booking for the company.'],
         solutiontitle: 'WHICH BUSINESSES IT HELPS',
         solitem: [
-          {img:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' , title: 'Book Moves Online', details: ['Its guides customers to book their moves online through an intuitive and easy to follow steps. It shows users’s different journeys based on the type and size of moves they select. For smaller moves, it offers customers direct payment or installation plans to help them complete end-to-end process online from booking till payment.'] },
-          {img:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' , title: 'Agents can share moves', details: ['Commission app lets ambassadors and agents recommend and share moves easily via SMS, email or social media. It helps them keep complete record of their earnings, move and payment statuses in real-time'] },
-          {img:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' , title: 'Manage commission structure', details: ['Sponsors and Ambassadors can manage their commission structure for their sub-agents down the tree any time right form the app and it will start reflecting in their future moves they referred.'] },
+          { img: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', title: 'Book Moves Online', details: ['Its guides customers to book their moves online through an intuitive and easy to follow steps. It shows users’s different journeys based on the type and size of moves they select. For smaller moves, it offers customers direct payment or installation plans to help them complete end-to-end process online from booking till payment.'] },
+          { img: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', title: 'Agents can share moves', details: ['Commission app lets ambassadors and agents recommend and share moves easily via SMS, email or social media. It helps them keep complete record of their earnings, move and payment statuses in real-time'] },
+          { img: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', title: 'Manage commission structure', details: ['Sponsors and Ambassadors can manage their commission structure for their sub-agents down the tree any time right form the app and it will start reflecting in their future moves they referred.'] },
         ],
-        portfolioimage1:'assets/content/work_cases/mfportfolio.png',
-        portfolioimage2:'assets/content/work_cases/mfportfolio1.png',
-        methodologyTitle:'HOW WE BUILT THE SYSTEM',
-        methodologyParagraph:['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
-        methodology:'',
-        tech:'NativeScript',
-        techlogo:'assets/content/work_cases/nstu.png'
+
+        methodologyTitle: 'HOW WE BUILT THE SYSTEM',
+        methodologyParagraph: ['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
+        moreSection: [
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+        ],
+        tech: 'NativeScript',
+        techlogo: 'assets/content/work_cases/nstu.png',
+        portfolioimage1: 'assets/content/work_cases/mfportfolio.png',
+        portfolioimage2: 'assets/content/work_cases/mfportfolio1.png',
       },
 
     ],
-  
+
 
 
   }
