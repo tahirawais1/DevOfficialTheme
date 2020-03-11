@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "app/sass/index";
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 body{
     margin: 0;
+}
+.bg-color{
+    color: $primary-color;
+}
+.bg-prime{
+    color: $secondary-color;
+
 }

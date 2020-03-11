@@ -6,13 +6,16 @@
 
 /////////////////////////////////////////////////////*/
 
-.open-sans {
-    font-family: 'Open Sans',sans-serif;
-}
 
 .main-font {
     font-family: 'Open Sans',sans-serif;
-    font-style: semi-bold;
+}
+.sec-font {
+    font-family:  Raleway , sans-serif !important;
+}
+
+.open-sans {
+    font-family: 'Open Sans',sans-serif;
 }
 
 .raleway {
@@ -30,52 +33,68 @@
 
 /////////////////////////////////////////////////////*/
 
-.error-color {
-    color: $error;
+.primary-color{
+    color: $primary-color
+}
+.primary-colorLight{
+    color: $primary-Light
+}
+.primary-colorDark{
+    color: $primary-Dark
 }
 
-.warning-color {
-    color: $apricot-colorl
+.error-color {
+    color: $error;
 }
 
 .secondary-color {
     color: $secondary-color;
 }
 
+.link-color{
+    color: $link-color
+}
+
+.link-color:hover{
+    color: $link-color-Dark;
+}
+
+
 .muted-color{
     color: $text-muted;
 }
 
-.light-muted{
-    color: $light-muted;
-}
+// .warning-color {
+//     color: $apricot-colorl
+// }
 
-.white-color{
-    color: $white-color;
-}
+// .light-muted{
+//     color: $light-muted;
+// }
 
-.link-color{
-    color: $primary-color
-}
-.link-color:hover{
-    color: $link-color-light;
-}
+// .white-color{
+//     color: $white-color;
+// }
 
-.border-color{
-    color: $border-color;
-}
 
-.btncolor{
-color: $button-bg-color;
-}
 
-.transparent-color{
-    color: transparent;
-}
 
-.icon-color{
-    color: $icon-del;
-}
+
+// .border-color{
+//     color: $border-color;
+// }
+
+// .btncolor{
+// color: $button-bg-color;
+// }
+
+// .transparent-color{
+//     color: transparent;
+// }
+
+// .icon-color{
+//     color: $icon-del;
+// }
 
 
 /*//////////////////////////////////////////////////////
@@ -89,57 +108,65 @@ color: $button-bg-color;
 }
 
 .bg-color {
-    background-color: $background-color;
+    background-color: $bg-color;
 }
 
-.muted-bg{
-    background-color: $muted-background
+.bg-link{
+    background-color: $link-Bg;
 }
+
+.bg-prime{
+    background-color: $primary-color;
+}
+
+// .muted-bg{
+//     background-color: $muted-background
+// }
     
-.white-background {
-    background-color: $white-color;
-}
-.secondary-bg {
-    background-color: $secondary-color;
-}
+// .white-background {
+//     background-color: $white-color;
+// }
+// .secondary-bg {
+//     background-color: $secondary-color;
+// }
 
-.link-background{
-    background-color: $link-color;
-}
+// .link-background{
+//     background-color: $link-color;
+// }
 
-.transparent-background{
-    background-color: transparent;
-}
+// .transparent-background{
+//     background-color: transparent;
+// }
 
-.loginbg{
-    background-color: $loginbg;
-}
+// .loginbg{
+//     background-color: $loginbg;
+// }
 
-.dark-bg{
-    background-color: $dark-bg-color;
-}
+// .dark-bg{
+//     background-color: $dark-bg-color;
+// }
 
-.highlight-bg{
-    background-color: $highlight-color;
-}
+// .highlight-bg{
+//     background-color: $highlight-color;
+// }
 
-.dropdown-bg-color{
-    background-color: $dropdown-bg-color;
-}
+// .dropdown-bg-color{
+//     background-color: $dropdown-bg-color;
+// }
 
-.dark-bg-dropdown{
-    background-color: $dark-dropdown;
-}
-.btn-bg{
-    background-color: $button-bg-color;
-}
+// .dark-bg-dropdown{
+//     background-color: $dark-dropdown;
+// }
+// .btn-bg{
+//     background-color: $button-bg-color;
+// }
 
-.blue-bg{
-    background-color: $blue-color;
-}
-.opacityBG{
-    background-color: $opacity-bg;
-}
+// .blue-bg{
+//     background-color: $blue-color;
+// }
+// .opacityBG{
+//     background-color: $opacity-bg;
+// }
 
 /*//////////////////////////////////////////////////////
 
@@ -181,7 +208,7 @@ color: $button-bg-color;
 
 .link-text:hover {
     text-decoration: underline;
-    color: $link-color-dark;
+    color: $link-color-Dark;
     cursor: pointer;
 }
 
@@ -320,10 +347,10 @@ color: $button-bg-color;
     border-radius: 3px;
 }
 
-.tu-dark-border{
-    border: 1px solid $border-color-dark;
-    border-radius: 3px;
-}
+// .tu-dark-border{
+//     border: 1px solid $border-color-dark;
+//     border-radius: 3px;
+// }
 
 .b-r-3{
     border-radius: 3px;
@@ -387,7 +414,15 @@ color: $button-bg-color;
 
 /////////////////////////////////////////////////////*/
 
-
+.widthAuto{
+width: auto;
+}
+.width50{
+    width: 50%;
+}
+.width100{
+    width: 100%;
+}
 .pager-header-height {
     height: 40px;
 }
@@ -443,7 +478,10 @@ color: $button-bg-color;
 
 /////////////////////////////////////////////////////*/
 
-
+.section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 .page-header-padding-left {
     padding: 0px 0px 0px 20px;
@@ -537,24 +575,24 @@ color: $button-bg-color;
 
 
 
-.tu-group-dropdown-height {
-    height: 32px;
-    background-color: $white-color;
+// .tu-group-dropdown-height {
+//     height: 32px;
+//     background-color: $white-color;
     
-}
+// }
 
 
 
-.btn-group-height {
-    height: 32px;
-    z-index: 20;
-}
+// .btn-group-height {
+//     height: 32px;
+//     z-index: 20;
+// }
 
-.btn{
-    background-color: $white-color;
-    box-shadow: none;
-    border-radius: 3px;
-}
+// .btn{
+//     background-color: $white-color;
+//     box-shadow: none;
+//     border-radius: 3px;
+// }
 
 .btn:hover{
     background-color: white !important; 
@@ -567,7 +605,7 @@ color: $button-bg-color;
 
 
 .tu-groupbtn{
-    border-color: $buttonBorder;
+    // border-color: $buttonBorder;
     color: $secondary-color;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
@@ -594,7 +632,7 @@ color: $button-bg-color;
 
 .tabs{
     height: 100%;
-    background-color: $white-color;
+    // background-color: $white-color;
 }
 
 

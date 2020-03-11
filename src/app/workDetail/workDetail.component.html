@@ -1,0 +1,51 @@
+<div class="section">
+  <h1 class="text-center main-h secondary-color main-font"> {{data?.title}}</h1>
+  <div class="text-center sec-p muted-color main-font"> {{data?.description}}
+  </div>
+  <div class="display-flex content-center  m-t-60">
+    <div class="imgParams b-r-3 display-flex content-center"
+      [ngStyle]="{'background-image': 'url(' + data?.imagePath + ')'}"> </div>
+  </div>
+
+  <div class="bottom190 bg-color">
+    <div>
+      <h1 class="main-h p-l-100 f-200 primary-color bottom0 main-font">Project Summary </h1>
+    </div>
+  </div>
+  <div class="text-center">
+    <h1 class="sec-h f-300 sec-font secondary-color"> {{data?.needText}}</h1>
+    <p *ngFor="let item of data?.needParagraph" class="p-t-10 p-l-100 p-r-100 f-200 sec-p main-font l-h-50">{{item}}</p>
+  </div>
+</div>
+
+<div class="section p-l-40 bg-color p-r-40">
+  <h1 class="sec-h text-center f-300 sec-font primary-color ">{{data?.solutiontitle}} </h1>
+  <div *ngFor="let item of data?.solitem">
+    <div class="row section">
+      <div class="col-sm-6 p-t-20">
+        <div class="main-p primary-colorLight ">
+          {{item.title}}
+        </div>
+        <div *ngFor="let items of item?.details " class="item f-100 primary-colorDark p-t-20">
+          {{items}}
+        </div>
+      </div>
+      <div class="col-sm-6 imgwid m-t-30" [ngStyle]="{'background-image': 'url(' + item?.img + ')'}">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section p-l-40 bg-prime p-r-40">
+  <h1 class="sec-h text-center f-300 sec-font ">{{data?.methodologyTitle}} </h1>
+  <p *ngFor="let item of data?.methodologyParagraph" class="p-t-10 p-l-100 p-r-100 f-300 sec-p main-font l-h-50">
+    {{item}}</p>
+  <div class="item main-font l-h-50 p-l-100 p-r-100" *ngFor="let item of data?.methodology">
+    {{item}}
+  </div>
+</div>
+<div class="section p-l-40 bg-color p-r-40">
+  <h1 class="sec-h text-center f-300 sec-font ">{{data?.methodologyTitle}} </h1>
+
+</div>
+

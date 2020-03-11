@@ -1,0 +1,26 @@
+.imgParams{
+    height: 480px;
+    max-width: 480px;
+    width: 300px;
+    min-width: 200px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.bottom190{
+    position: relative;
+    bottom: 190px;
+    height: 500px;
+}
+.bottom0{
+    position: relative;
+    top: 300px;
+}
+
+.imgwid{
+    background-repeat: no-repeat;
+    max-width: 400px;
+    max-height: 400px;
+    vertical-align: middle;
+  margin-left: 30px;
+}
