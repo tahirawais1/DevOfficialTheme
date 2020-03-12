@@ -8,7 +8,7 @@
 
 
 .main-font {
-    font-family: 'Open Sans',sans-serif;
+    font-family: Radikal,'Open Sans',sans-serif;
 }
 .sec-font {
     font-family:  Raleway , sans-serif !important;
@@ -49,6 +49,9 @@
 
 .secondary-color {
     color: $secondary-color;
+}
+.secondary-colorLight {
+    color: $secondary-Light;
 }
 
 .link-color{

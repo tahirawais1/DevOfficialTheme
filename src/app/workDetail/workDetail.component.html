@@ -1,6 +1,6 @@
-<div class="section">
-  <h1 class="text-center main-h secondary-color main-font"> {{data?.title}}</h1>
-  <div class="text-center sec-p muted-color main-font"> {{data?.description}}
+<div class="section p-l-100 p-r-100">
+  <h1 class="text-center Large-h secondary-color main-font"> {{data?.title}}</h1>
+  <div class="text-center sec-p secondary-colorLight main-font"> {{data?.description}}
   </div>
   <div class="display-flex content-center  m-t-60">
     <div class="imgParams b-r-3 display-flex content-center"
@@ -9,20 +9,20 @@
 
   <div class="bottom190 bg-color">
     <div>
-      <h1 class="main-h p-l-100 f-200 primary-color bottom0 main-font">Project Summary </h1>
+      <h1 class="sec-h p-l-100 primary-color bottom0 main-font">Project Summary </h1>
     </div>
   </div>
   <div class="text-center">
-    <h1 class="sec-h f-300 sec-font secondary-color"> {{data?.needText}}</h1>
+    <h1 class="main-p main-font secondary-color m-t--30"> {{data?.needText}}</h1>
     <p *ngFor="let item of data?.needParagraph" class="p-t-10 p-l-100 p-r-100 f-200 sec-p main-font l-h-50">{{item}}</p>
   </div>
 </div>
 
-<div class="section p-l-40 bg-color p-r-40">
-  <h1 class="sec-h text-center f-300 sec-font primary-color ">{{data?.solutiontitle}} </h1>
+<div class="section p-l-100 bg-color p-r-100">
+  <h1 class="sec-h text-center f-300 main-font primary-color ">{{data?.solutiontitle}} </h1>
   <div *ngFor="let item of data?.solitem">
     <div class="row section">
-      <div class="col-sm-6 p-t-20">
+      <div class="col-sm-7 p-t-20">
         <div class="main-p primary-colorLight ">
           {{item.title}}
         </div>
@@ -30,30 +30,57 @@
           {{items}}
         </div>
       </div>
-      <div class="col-sm-6 imgwid m-t-30" [ngStyle]="{'background-image': 'url(' + item?.img + ')'}">
+      <div class="col-sm-5 imgwid p-l-30 m-t-30" [ngStyle]="{'background-image': 'url(' + item?.img + ')'}">
       </div>
     </div>
   </div>
 </div>
 
-<div class="section p-l-40 bg-prime p-r-40">
-  <h1 class="sec-h text-center f-300 sec-font ">{{data?.methodologyTitle}} </h1>
-  <p *ngFor="let item of data?.methodologyParagraph" class="p-t-10 p-l-100 p-r-100 f-300 sec-p main-font l-h-50">
+<div class="section  bg-prime ">
+  <h1 class="sec-h text-center f-300 main-font ">{{data?.methodologyTitle}} </h1>
+  <p *ngFor="let item of data?.methodologyParagraph" class="p-t-20 p-l-100 p-r-100 f-300 sec-p main-font l-h-50">
     {{item}}</p>
   <div class="item main-font l-h-50 p-l-100 p-r-100" *ngFor="let item of data?.methodology">
     {{item}}
   </div>
 </div>
-<div *ngFor="let item of data?.moreSection" class="section p-l-40 bg-color p-r-40">
-  <h1 class="sec-h text-center f-300 sec-font "> {{item.tittle}}</h1>
-  <div class="row">
-    <div class="col-md-6">
-      <h1 class="main-p f-300 sec-font "> {{item.desc}}</h1>
 
+<div *ngFor="let item of data?.moreSection" class="section p-l-100 bg-color p-r-100">
+  <h1 class="sec-h text-center f-300 main-font "> {{item.tittle}}</h1>
+  <div class="row p-t-20">
+    <div class="col-md-7 ">
+      <div *ngFor="let items of item.desc">
+        <h1 class="item main-font p-t-40 l-h-50"> {{items}}</h1>
+      </div>
     </div>
-    <div class="col-sm-6 imgwid m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imgPath + ')'}">
+    <div class="col-sm-5 imgwid p-l-30 m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imgPath + ')'}">
     </div>
-
   </div>
 
 </div>
+
+<div class="section p-l-100 bg-prime p-r-100">
+  <h1 class="sec-h text-center f-300 main-font "> {{data.furtherMoreTittle}}</h1>
+  <div *ngFor="let item of data?.furtherMore; let i = index">
+    <div class="row p-t-60" *ngIf="i % 2 == 0">
+      <div class="col-sm-5 imgwid m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+      </div>
+      <div class="col-md-7 ">
+        <h1 class="item text-center main-font p-t-30 l-h-50"> {{item?.desc}}</h1>
+      </div>
+    </div>
+    <div class="row p-t-60" *ngIf="i % 2 == 1">
+      <div class="col-md-7 ">
+        <h1 class="item text-center main-font p-t-30 l-h-50"> {{item?.desc}}</h1>
+      </div>
+      <div class="col-sm-5 imgwid m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- <app-upperFooter ></app-upperFooter> -->
+<app-upperFooter bgprime=true></app-upperFooter>

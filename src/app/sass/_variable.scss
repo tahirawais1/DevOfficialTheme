@@ -5,7 +5,8 @@ $primary-Light:white;
 $primary-Dark:rgb(228, 220, 220);
 
 $secondary-color:rgb(49, 48, 48);
-$text-muted: rgb(108, 114, 121);
+$secondary-Light:#4f525e;
+$text-muted: rgb(196, 203, 209);
 
 $bg-color:black;
 
@@ -81,8 +82,8 @@ $info-color:rgb(156, 236, 240);
 // //Error colors
 
 // $error : rgb(255, 40, 40);
-// $error-light : rgb(255, 60, 60);
-// $error-opacity : rgba(255, 219, 219, 0.863);
+$error-light : rgb(255, 60, 60);
+$error-opacity : rgba(255, 219, 219, 0.863);
 
 
 // $blue-color:rgb(75, 130, 255);

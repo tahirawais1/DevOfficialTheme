@@ -89,10 +89,21 @@ export class DataService {
         methodologyParagraph: ['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
         methodology: ['Back office web application', 'Mobile application for field operations', 'Mobile app for advanced reporting and business intelligence', 'B2B e-commerce and marketplace platform'],
         moreSection: [
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+          { tittle: 'BACK OFFICE WEB APPLICATION', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc:[
+            'Back office web application is used to centrally manage supply chain operations with end-to-end control and visibility. It’s single page application built over APIs with offline first capability for better user experience and reduced bandwidth usage.',
+            'Back office allows adding users with different roles and permissions. That’s where users can manage and keep track of their inventories, sale orders, purchase orders, customer and supplier relationships, invoices, payments, reporting and much more.']
+          },
+          { tittle: 'MOBILE APP', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc:[
+            'Mobile app is used by the field staff to punch all their activities and transactions directly in the system instead of manual paper work. Also, they have access to the update information on product, pricing, inventory levels, customers to perform better on the field.']
+          },
         ],
+
+        furtherMoreTittle:'UX Design Challenges',
+        furtherMore:[
+          {desc:'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.' ,  imagePath:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png'},
+          {desc:'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.' ,  imagePath:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png'},
+          {desc:'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.' ,  imagePath:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png'},
+      ],
         tech: 'NativeScript',
         techlogo: 'assets/content/work_cases/nstu.png',
         portfolioimage1: 'assets/content/work_cases/tuportfolio4.png',
@@ -104,7 +115,6 @@ export class DataService {
         description: 'Next generation video based recruitment platform',
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
         detailPage: 'HireGoat wanted to develop video based platform to eliminate the recruitment overhead. They wanted to replace boring and ineffective CV based recruitment procedure with video based recruitment where smiles, personality and character count first.  Recruiter and candidate can have video call based interview on their mobile anytime. It provided them with a quick and effective way to shortlist right potential hires.',
-        techManager: 'Mr Zeeshan Aslam',
         proServices: ['SaaS', 'Recruitment', 'iOS', 'Android'],
         titlephoto: 'assets/content/work_cases/fhportfolio.png',
         needText: 'The Need',
@@ -143,6 +153,10 @@ export class DataService {
           { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
           { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
         ],
+        furtherMoreTittle:'UX Design Challenges',
+        furtherMore:[
+          {desc:'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' },
+      ],
         tech: 'React Native',
         techlogo: 'assets/content/work_cases/clean-up/react-native-logo@2x-ab2c22364cf8131b683d5fe86bb396c0b046afb812add95e35a4781b77075d33.png',
         portfolioimage1: 'assets/content/work_cases/fhportfolio.png',
@@ -154,7 +168,6 @@ export class DataService {
         description: 'A marketplace to book moves and earn commission',
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
         detailPage: 'A USA client wanted to develop a marketplace where their customers can book different types of moves online. They also wanted a commission management app that would allow their sponsors, agents and ambassador to refer moves through their system and earn commission whereby increasing sales for the company.',
-        techManager: 'Mr Zeeshan Aslam',
         proServices: ['Web', 'Moving', 'Industry', 'USA'],
         titlephoto: 'assets/content/work_cases/mfportfolio.png',
         needText: 'The Need',
@@ -174,6 +187,10 @@ export class DataService {
           { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
           { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
         ],
+        furtherMoreTittle:'UX Design Challenges',
+        furtherMore:[
+          {desc:'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.' , imagePath:'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png'}
+        ],
         tech: 'NativeScript',
         techlogo: 'assets/content/work_cases/nstu.png',
         portfolioimage1: 'assets/content/work_cases/mfportfolio.png',
@@ -186,6 +203,7 @@ export class DataService {
 
   }
 
+  
   ////////////////////////////////////////////////////////////////////////
   ////////////////////////Technology Page Data////////////////////////////
   ////////////////////////////////////////////////////////////////////////

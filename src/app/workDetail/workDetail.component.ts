@@ -14,7 +14,6 @@ export class WorkDetailComponent implements OnInit {
 
   ngOnInit() {
     this.data = this.dataService.getWorkByTitle('TradeUnleashed')[0];
-    console.log(this.data)
   }
 
 }

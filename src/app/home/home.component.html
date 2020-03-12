@@ -1,4 +1,4 @@
-<div class="devheader display-flex p-t-10 p-b-10 p-l-10 p-r-10">
+<!-- <div class="devheader display-flex p-t-10 p-b-10 p-l-10 p-r-10">
   <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/' ]">Home</div>
   <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/technologies' ]">technologies</div>
   <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/services' ]">services</div>
@@ -6,4 +6,18 @@
   <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/about' ]">About</div>
   <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/works' ]">Works</div>
   <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/workdetail' ]">Work Detail</div>
+</div> -->
+
+<div class="section bg-color p-l-100 p-r-100">
+  <app-headingDesc [heading] = 'heading' [description] ='description' ></app-headingDesc>
+
+  <!-- <div class="bottom190 bg-color">
+    <div>
+      <h1 class="sec-h p-l-100 primary-color bottom0 main-font">Project Summary </h1>
+    </div>
+  </div>
+  <div class="text-center">
+    <h1 class="main-p main-font secondary-color m-t--30"> {{data?.needText}}</h1>
+    <p *ngFor="let item of data?.needParagraph" class="p-t-10 p-l-100 p-r-100 f-200 sec-p main-font l-h-50">{{item}}</p>
+  </div> -->
 </div>

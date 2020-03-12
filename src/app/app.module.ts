@@ -9,6 +9,7 @@ import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { WorksComponent } from './works/works.component';
 import { WorkDetailComponent } from './workDetail/workDetail.component';
+import { DuThemeModule } from './du-theme/du-theme.module';
 
 @NgModule({
    declarations: [
@@ -23,7 +24,8 @@ import { WorkDetailComponent } from './workDetail/workDetail.component';
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      DuThemeModule
    ],
    providers: [],
    bootstrap: [

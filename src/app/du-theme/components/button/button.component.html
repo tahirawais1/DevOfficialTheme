@@ -1,0 +1,16 @@
+<!-- (click)="clickEvent($event)"  -->
+<button 
+    [disabled]="disabled"
+    [style.height]="height" 
+    [style.width]="width" 
+    [style.backgroundColor]="backgroundColor" 
+    class="tubtn {{class}}"
+    [ngClass]="{ 
+    'fill item':type === 'fill',
+    'outline-light item' :type === 'outline',
+    'text-only ':type === 'textOnly', 
+    'deletebtn': type ==='deletebtn'
+    }"
+    >
+        {{text}}
+</button>
