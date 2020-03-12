@@ -137,9 +137,9 @@
 //     background-color: $link-color;
 // }
 
-// .transparent-background{
-//     background-color: transparent;
-// }
+.transparent-background{
+    background-color: $transparent-color;
+}
 
 // .loginbg{
 //     background-color: $loginbg;
@@ -357,6 +357,9 @@
 
 .b-r-3{
     border-radius: 3px;
+}
+.b-r-20{
+    border-radius: 20px;
 }
 
 .doted-border-top{

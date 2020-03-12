@@ -1,4 +1,18 @@
-<h1 class="text-center sec-h  main-font"> {{heading}}</h1>
-<div class="m-t-30 text-center item p-l-200 p-r-200 main-font"> {{description}}</div>
-<div class="display-flex content-center  m-t-60">
+<div class="text-center p-t-100  p-b-100" [ngClass]="{'bg-prime': bgprime , 'bg-color': !bgprime}">
+    <h1 class="text-center sec-h main-font"> {{heading}} </h1>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 item main-font l-h-50 p-t-30 p-b-60">
+            {{description}}
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+
+    <div *ngIf="bgprime && button">
+        <app-button [text]="button" type=outline [width]="btnwidth" [height]="btnheight"></app-button>
+    </div>
+    <div *ngIf="!bgprime && button">
+        <app-button [text]="button" type=fill [width]="btnwidth" [height]="btnheight"></app-button>
+    </div>
 </div>

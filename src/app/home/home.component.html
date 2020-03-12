@@ -1,23 +1,66 @@
-<!-- <div class="devheader display-flex p-t-10 p-b-10 p-l-10 p-r-10">
-  <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/' ]">Home</div>
-  <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/technologies' ]">technologies</div>
-  <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/services' ]">services</div>
-  <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/contact' ]">contact</div>
-  <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/about' ]">About</div>
-  <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/works' ]">Works</div>
-  <div class="primary-color p-r-10 p-l-10" [routerLink]="[ '/workdetail' ]">Work Detail</div>
-</div> -->
+<div class="devheader display-flex p-t-1 p-b-1 p-l-1 p-r-1">
+  <div class="primary-color p-r-1 p-l-1" [routerLink]="[ '/' ]">Home</div>
+  <div class="primary-color p-r-1 p-l-1" [routerLink]="[ '/technologies' ]">technologies</div>
+  <div class="primary-color p-r-1 p-l-1" [routerLink]="[ '/services' ]">services</div>
+  <div class="primary-color p-r-1 p-l-1" [routerLink]="[ '/contact' ]">contact</div>
+  <div class="primary-color p-r-1 p-l-1" [routerLink]="[ '/about' ]">About</div>
+  <div class="primary-color p-r-1 p-l-1" [routerLink]="[ '/works' ]">Works</div>
+  <div class="primary-color p-r-1 p-l-1" [routerLink]="[ '/workdetail' ]">Work Detail</div>
+</div>
 
-<div class="section bg-color p-l-100 p-r-100">
-  <app-headingDesc [heading] = 'heading' [description] ='description' ></app-headingDesc>
+<div class="section text-center p-l-100 p-r-100">
+  <app-headingDesc [heading]='heading' [description]='description'></app-headingDesc>
+  <div class="row p-b-60">
 
-  <!-- <div class="bottom190 bg-color">
-    <div>
-      <h1 class="sec-h p-l-100 primary-color bottom0 main-font">Project Summary </h1>
+    <div class="col-md-4 center-align text-center p-t-100" *ngFor="let item of data?.techItem">
+      <img class="imgheight" [src]='item.imagePath'>
+      <div class="sec-p main-font p-t-30">
+        {{item.title}}
+      </div>
+    </div>
+
+  </div>
+  <app-button text="Explore our services" type=fill width="250px" height="50px"></app-button>
+
+</div>
+<div class="section p-l-100 p-r-100">
+  <div *ngFor="let item of workings?.workitems; let i = index">
+    <div class="row p-t-100" *ngIf="i % 2 == 0">
+      <div class="col-sm-5 portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+      </div>
+      <div class="col-md-7 p-l-60">
+        <h1 class="main-h f-400 main-font p-t-30 l-h-50"> {{item?.title}}</h1>
+        <h1 class="sec-p main-font p-t-30 l-h-50"> {{item?.description}}</h1>
+        <div class="display-flex">
+          <div *ngFor="let item of item.proServices">
+            <app-badges [text]=item></app-badges>
+          </div>
+        </div>
+        <p class="item p-b-30">{{item.detailPage}}</p>
+        <app-button text="See full case study" type=fill width="250px" height="50px"></app-button>
+      </div>
+    </div>
+    <div class="row p-t-100" *ngIf="i % 2 == 1">
+      <div class="col-md-6 ">
+        <h1 class="main-h f-400 main-font p-t-30 l-h-50"> {{item?.title}}</h1>
+        <h1 class="sec-p main-font p-t-30 l-h-50"> {{item?.description}}</h1>
+        <div class="display-flex">
+          <div *ngFor="let item of item.proServices">
+            <app-badges [text]=item></app-badges>
+          </div>
+        </div>
+        <p class="item p-b-30">{{item.detailPage}}</p>
+        <app-button text="See full case study" type=fill width="250px" height="50px"></app-button>
+      </div>
+      <div class="col-sm-6 portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+      </div>
     </div>
   </div>
-  <div class="text-center">
-    <h1 class="main-p main-font secondary-color m-t--30"> {{data?.needText}}</h1>
-    <p *ngFor="let item of data?.needParagraph" class="p-t-10 p-l-100 p-r-100 f-200 sec-p main-font l-h-50">{{item}}</p>
-  </div> -->
+</div>
+<app-headingDesc heading='Check out more works by Devunleash'
+  description='Our case studies describe design and development solutions we’ve implemented for our clients. These stories are full of valuable insights into how we approach web and mobile development.'
+  button='Explore our Portfolio' btnwidth='250px'></app-headingDesc>
+<div class="p-b-60">
+  <app-headingDesc bgprime=true button='Contact us' heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
+    for your business.'></app-headingDesc>
 </div>

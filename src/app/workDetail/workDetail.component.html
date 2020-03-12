@@ -1,4 +1,4 @@
-<div class="section p-l-100 p-r-100">
+<div class="section bg-prime">
   <h1 class="text-center Large-h secondary-color main-font"> {{data?.title}}</h1>
   <div class="text-center sec-p secondary-colorLight main-font"> {{data?.description}}
   </div>
@@ -12,13 +12,13 @@
       <h1 class="sec-h p-l-100 primary-color bottom0 main-font">Project Summary </h1>
     </div>
   </div>
-  <div class="text-center">
+  <div class="text-center bg-prime">
     <h1 class="main-p main-font secondary-color m-t--30"> {{data?.needText}}</h1>
     <p *ngFor="let item of data?.needParagraph" class="p-t-10 p-l-100 p-r-100 f-200 sec-p main-font l-h-50">{{item}}</p>
   </div>
 </div>
 
-<div class="section p-l-100 bg-color p-r-100">
+<div class="section p-l-100  p-r-100">
   <h1 class="sec-h text-center f-300 main-font primary-color ">{{data?.solutiontitle}} </h1>
   <div *ngFor="let item of data?.solitem">
     <div class="row section">
@@ -45,7 +45,7 @@
   </div>
 </div>
 
-<div *ngFor="let item of data?.moreSection" class="section p-l-100 bg-color p-r-100">
+<div *ngFor="let item of data?.moreSection" class="section p-l-100  p-r-100">
   <h1 class="sec-h text-center f-300 main-font "> {{item.tittle}}</h1>
   <div class="row p-t-20">
     <div class="col-md-7 ">
@@ -82,5 +82,7 @@
 
 
 
-<!-- <app-upperFooter ></app-upperFooter> -->
-<app-upperFooter bgprime=true></app-upperFooter>
+<div class="p-b-60">
+  <app-headingDesc button=true heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
+  for your business.'></app-headingDesc>
+</div>

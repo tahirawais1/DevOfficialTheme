@@ -8,12 +8,12 @@
 }
 .bottom190 {
   position: relative;
-  bottom: 190px;
-  height: 500px;
+  bottom: 19vh;
+  height: 50vh;
 }
 .bottom0 {
   position: relative;
-  top: 300px;
+  top: 30vh;
 }
 .imgwid {
   background-repeat: no-repeat;
@@ -21,5 +21,7 @@
   max-height: 400px;
   min-height: 300px;
   vertical-align: middle;
-  margin-left: 30px;
+}
+.m-t--30 {
+  margin-top: -30px;
 }
