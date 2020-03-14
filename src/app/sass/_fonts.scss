@@ -64,6 +64,13 @@ p{
     font-size: calc(.6em + 1vmin);
     font-weight: 200;
 }
+.navLink{
+   font-family: 'Open Sans',sans-serif;
+    font-size: calc(.7em + 1vmin);
+    font-weight: 200;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 // .Large-h{
 // font-size: 5.5rem;
 // font-weight: 400;

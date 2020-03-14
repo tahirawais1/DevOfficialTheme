@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
     this.workings = this.dataService.workPage;
     this.heading = this.data.headerSection.tittle;
     this.description = this.data.headerSection.description;
-    console.log(this.workings)
   }
 
 }
