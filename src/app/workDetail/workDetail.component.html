@@ -4,8 +4,9 @@
   <h1 class="text-center Large-h secondary-color main-font"> {{data?.title}}</h1>
   <div class="row">
     <div class="col-md-2"></div>
-    <div class="col-md-8 text-center sec-p secondary-colorLight main-font">
-      {{data?.description}}
+    <div class="col-md-8 text-center">
+      <div class="subtittle"> {{data?.description}}</div> 
+      
     </div>
     <div class="col-md-2"></div>
   </div>
@@ -17,24 +18,32 @@
 
   <div class="bottom190 bg-color">
     <div>
-      <h1 class="sec-h p-l-100 primary-color bottom0 main-font">Project Summary </h1>
+      <h4 class="bottom0 p-l-30">Project Summary </h4>
     </div>
   </div>
   <div class="text-center bg-prime">
-    <h1 class="main-p main-font secondary-color m-t--30"> {{data?.needText}}</h1>
-    <p *ngFor="let item of data?.needParagraph" class="p-t-10 p-l-100 p-r-100 f-200 sec-p main-font l-h-50">{{item}}</p>
+    <h5 class="m-t--30"> {{data?.needText}}</h5>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div *ngFor="let item of data?.needParagraph" class="p-t-20 l-h-44 strongP">{{item}}</div>
+
+      </div>
+      <div class="col-md-1"></div>
+
+    </div>
   </div>
 </div>
 
 <div class="section p-l-100  p-r-100">
-  <h1 class="sec-h text-center f-300 main-font primary-color ">{{data?.solutiontitle}} </h1>
+  <h4 class="text-center">{{data?.solutiontitle}} </h4>
   <div *ngFor="let item of data?.solitem">
     <div class="row section">
       <div class="col-sm-7 p-t-20">
-        <div class="main-p primary-colorLight ">
+        <p class=" primary-colorLight ">
           {{item.title}}
-        </div>
-        <div *ngFor="let items of item?.details " class="item f-100 primary-colorDark p-t-20">
+        </p>
+        <div *ngFor="let items of item?.details" class="p2 primary-colorDark p-t-20">
           {{items}}
         </div>
       </div>
@@ -45,20 +54,25 @@
 </div>
 
 <div class="section  bg-prime ">
-  <h1 class="sec-h text-center f-300 main-font ">{{data?.methodologyTitle}} </h1>
-  <p *ngFor="let item of data?.methodologyParagraph" class="p-t-20 p-l-100 p-r-100 f-300 sec-p main-font l-h-50">
-    {{item}}</p>
-  <div class="item main-font l-h-50 p-l-100 p-r-100" *ngFor="let item of data?.methodology">
-    {{item}}
+  <h4 class="text-center">{{data?.methodologyTitle}} </h4>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div *ngFor="let item of data?.methodologyParagraph" class="p-t-20 l-h-44 strongP">{{item}}</div>
+      <p  *ngFor="let item of data?.methodology" class="p-t-20">{{item}}</p>
+
+    </div>
+    <div class="col-md-2"></div>
   </div>
+
 </div>
 
-<div *ngFor="let item of data?.moreSection" class="section p-l-100  p-r-100">
-  <h1 class="sec-h text-center f-300 main-font "> {{item.tittle}}</h1>
+<div *ngFor="let item of data?.moreSection" class="section p-l-100 p-r-100">
+  <h4 class=" text-center "> {{item.tittle}}</h4>
   <div class="row p-t-20">
     <div class="col-md-7 ">
       <div *ngFor="let items of item.desc">
-        <h1 class="item main-font p-t-40 l-h-50"> {{items}}</h1>
+        <p class="p-t-40 l-h-44"> {{items}}</p>
       </div>
     </div>
     <div class="col-sm-5 imgwid p-l-30 m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imgPath + ')'}">
@@ -68,18 +82,18 @@
 </div>
 
 <div class="section p-l-100 bg-prime p-r-100">
-  <h1 class="sec-h text-center f-300 main-font "> {{data.furtherMoreTittle}}</h1>
+  <h4 class=" text-center "> {{data.furtherMoreTittle}}</h4>
   <div *ngFor="let item of data?.furtherMore; let i = index">
     <div class="row p-t-60" *ngIf="i % 2 == 0">
       <div class="col-sm-5 imgwid m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
       </div>
       <div class="col-md-7 ">
-        <h1 class="item text-center main-font p-t-30 l-h-50"> {{item?.desc}}</h1>
+        <p class="text-center p-t-30 l-h-44"> {{item?.desc}}</p>
       </div>
     </div>
     <div class="row p-t-60" *ngIf="i % 2 == 1">
       <div class="col-md-7 ">
-        <h1 class="item text-center main-font p-t-30 l-h-50"> {{item?.desc}}</h1>
+        <div class="p2 text-center p-t-30 l-h-44"> {{item?.desc}}</div>
       </div>
       <div class="col-sm-5 imgwid m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
       </div>
@@ -89,8 +103,7 @@
 </div>
 
 
-
-<div class="p-b-60">
-  <app-headingDesc button=true heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
+<div class="p-b-60 p-t-60">
+  <app-headingDesc button='Talk to Us' heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
   for your business.'></app-headingDesc>
 </div>
