@@ -1,52 +1,86 @@
-<footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <a class="logo" rel="nofollow" (click)="routeToServices('/')"><img class="logo__img" alt="Logo" src="assets/content/logos/devLogoWhite.png" /></a>
-          <p>Full-stack mobile (iOS, Android) and web app design and development company.</p>
-        </div>
-        <div class="col" style="top:0;">
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a rel="nofollow" class="main-nav__link"
-                  (click)="routeToServices('/works')">Works</a></li>
-              <li class="main-nav__item"><a rel="nofollow" class="main-nav__link"
-                  (click)="routeToServices('/technologies')">Technologies</a></li>
-              <li class="main-nav__item"><a rel="nofollow" class="main-nav__link"
-                  (click)="routeToServices('/services')">Services</a></li>
-              <li class="main-nav__item"><a rel="nofollow" class="main-nav__link"
-                  (click)="routeToServices('/company')">Company</a>
-              </li>
-              <li class="main-nav__item"><a rel="nofollow" class="main-nav__link"
-                  (click)="routeToServices('/contact')">Contact us</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col">
-          <ul class="socials">
-            <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/devunleash" title="Facebook"
-                target="_blank" rel="nofollow"><img class="socials__icon" alt=""
-                  src="assets/icons/socials/icon-facebook-56e7d31a72b9625d82cd9b706be2cef841382f92800d88af6c65418b12fe621b.svg" /></a>
-            </li>
-            <li class="socials__item"><a class="socials__link" href="https://twitter.com/Devunleash" title="Twitter"
-                target="_blank" rel="nofollow">
-                <img class="socials__icon" alt="" src="assets/icons/socials/icon-twitter-577a8f11cf67cbd12f054cd5e974b2de82c21ff4d4310f5b7f168911cd9b3622.svg" /></a>
-            </li>
-            <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/in/dev-unleash-a161a1190/"
-                title="linkedin" target="_blank" rel="nofollow"> <i class="socials__icon fa fa-linkedin"></i> </a>
-  
-            <li class="socials__item"><a class="socials__link" href="https://github.com/DevUnleash" title="Github"
-                target="_blank" rel="nofollow"><img class="socials__icon" alt=""
-                  src="assets/icons/socials/icon-github-9edf17205f23c1bf30e497f312e6e39ec5d5c4b2a643dcb36771853707e49604.svg" /></a>
-            </li>
-          </ul>
-        </div>
+<footer class="p-b-60">
+  <div class="row">
+    <div class="col-md-3 p-l-40">
+
+      <a class="logo" rel="nofollow" (click)="routeToServices('/')">
+        <img class="logo__img p-b-20 pointer" alt="Logo" src="assets/techIcon/devLogoWhite.png" /></a>
+      <p>Providing optimal customer satisfaction through business solutions and range of quality software</p>
+    </div>
+
+    <div class="col-md-6">
+      <div class="p-b-30 bg-color display-flex content-center">
+        <div class="navLink m-l-15 m-r-15" (click)="routeto('/home')">Home</div>
+        <div class="navLink m-l-15 m-r-15" (click)="routeto('/works')">Works </div>
+        <div class="navLink m-l-15 m-r-15" (click)="routeto('/technologies')">technologies</div>
+        <div class="navLink m-l-15 m-r-15" (click)="routeto('/services')">services</div>
+        <div class="navLink m-l-15 m-r-15" (click)="routeto('/about')">Comapany</div>
+        <div class="navLink m-l-15 m-r-15" (click)="routeto('/contact')"> contact US</div>
       </div>
-  
-      <div class="row">
-        <div class="col"><small class="copyright">&copy;Copyright&nbsp;2019&nbsp;Devunleash – Full-stack mobile (iOS,
-            Android) and web app design and development company. All Rights Reserved</small><a class="privacy-policy"
-            (click)="routeToServices('/privary-policy')">Privacy Policy</a></div>
+
+    </div>
+    <div class="col-md-3 display-flex logo__img">
+      <img class="pointer p-b-25 p-r-10 p-l-10" src='assets/social/github.svg'>
+      <img class="pointer p-b-25 p-r-10 p-l-10" src='assets/social/facebook.svg'>
+      <img class="pointer p-b-25 p-r-10 p-l-10" src='assets/social/twitter.svg'>
+      <img class="pointer p-b-25 p-r-10 p-l-10" src='assets/social/github.svg'>
+      <i class="pointer p-b-25 p-r-10 p-l-10 fa fa-linkedin"></i>
+    </div>
+  </div>
+  <div class="p3 text-center p-t-30">
+    &copy;Copyright&nbsp;2019&nbsp;Devunleash – Full-stack mobile (iOS, Android) and web app design and development
+    company. All Rights Reserved
+  </div>
+</footer>
+
+<!-- <div class="container">
+    <div class="row">
+      <div class="col">
+        <a class="logo" rel="nofollow" (click)="routeToServices('/')"><img class="logo__img" alt="Logo"
+            src="assets/content/logos/devLogoWhite.png" /></a>
+        <p>Full-stack mobile (iOS, Android) and web app design and development company.</p>
+      </div>
+      <div class="col" style="top:0;">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a rel="nofollow" class="main-nav__link"
+                (click)="routeToServices('/works')">Works</a></li>
+            <li class="main-nav__item"><a rel="nofollow" class="main-nav__link"
+                (click)="routeToServices('/technologies')">Technologies</a></li>
+            <li class="main-nav__item"><a rel="nofollow" class="main-nav__link"
+                (click)="routeToServices('/services')">Services</a></li>
+            <li class="main-nav__item"><a rel="nofollow" class="main-nav__link"
+                (click)="routeToServices('/company')">Company</a>
+            </li>
+            <li class="main-nav__item"><a rel="nofollow" class="main-nav__link"
+                (click)="routeToServices('/contact')">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col">
+        <ul class="socials">
+          <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/devunleash" title="Facebook"
+              target="_blank" rel="nofollow"><img class="socials__icon" alt=""
+                src="assets/icons/socials/icon-facebook-56e7d31a72b9625d82cd9b706be2cef841382f92800d88af6c65418b12fe621b.svg" /></a>
+          </li>
+          <li class="socials__item"><a class="socials__link" href="https://twitter.com/Devunleash" title="Twitter"
+              target="_blank" rel="nofollow">
+              <img class="socials__icon" alt=""
+                src="assets/icons/socials/icon-twitter-577a8f11cf67cbd12f054cd5e974b2de82c21ff4d4310f5b7f168911cd9b3622.svg" /></a>
+          </li>
+          <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/in/dev-unleash-a161a1190/"
+              title="linkedin" target="_blank" rel="nofollow"> <i class="socials__icon fa fa-linkedin"></i> </a>
+
+          <li class="socials__item"><a class="socials__link" href="https://github.com/DevUnleash" title="Github"
+              target="_blank" rel="nofollow"><img class="socials__icon" alt=""
+                src="assets/icons/socials/icon-github-9edf17205f23c1bf30e497f312e6e39ec5d5c4b2a643dcb36771853707e49604.svg" /></a>
+          </li>
+        </ul>
       </div>
     </div>
-  </footer>
+
+    <div class="row">
+      <div class="col"><small class="copyright">&copy;Copyright&nbsp;2019&nbsp;Devunleash – Full-stack mobile (iOS,
+          Android) and web app design and development company. All Rights Reserved</small><a class="privacy-policy"
+          (click)="routeToServices('/privary-policy')">Privacy Policy</a></div>
+    </div>
+  </div> -->

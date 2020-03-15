@@ -83,12 +83,12 @@ export class DataService {
         description: 'A real-time supply chain management platform for manufacturers, distributors, retailers & sales team.',
         detailPage: 'TradeUnleashed wanted to develop a supply chain platform that would enable manufacturers and distributors to connect to their sales team and trade partners in real time. It would help them gain real-time information access, on-the-go decision making and eliminate all paper work. From detailed back office business operations to on-the-go information access with smart mobile app, all the supply chain control and visibility is on your fingertips with tradeUnleashed.',
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
-        themeColor:'#1476dd',
+        themeColor: '#1476dd',
         proServices: ['SaaS', 'Supply Chain', 'Web', 'iOS', 'Android'],
         titlephoto: 'assets/content/work_cases/tu.png',
         needText: 'The Need',
         needParagraph:
-          ['A big manufacturer company wanted to develop a supply chain platform where they can connect to their trade partners and sales team in real-time and exchange business and transaction information on-the-go. With real-time information access, on-the-go decision making and control and visibility across supply entire supply chain, they would be able to increase business efficiency and reduce loss & leakage' , 'Every person in the team would have access to up-to-date real-time information on his finger-tips for on-the-go decision making, better stock management and sales automation. It would avoid delays, reduce leakage and increase business efficiency.'],
+          ['A big manufacturer company wanted to develop a supply chain platform where they can connect to their trade partners and sales team in real-time and exchange business and transaction information on-the-go. With real-time information access, on-the-go decision making and control and visibility across supply entire supply chain, they would be able to increase business efficiency and reduce loss & leakage', 'Every person in the team would have access to up-to-date real-time information on his finger-tips for on-the-go decision making, better stock management and sales automation. It would avoid delays, reduce leakage and increase business efficiency.'],
         solutiontitle: 'WHICH BUSINESSES IT HELPS',
         solitem: [{
           img: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
@@ -132,7 +132,7 @@ export class DataService {
         title: 'HireGoat',
         description: 'Next generation video based recruitment platform',
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
-        themeColor:'#e77621',
+        themeColor: '#e77621',
         detailPage: 'HireGoat wanted to develop video based platform to eliminate the recruitment overhead. They wanted to replace boring and ineffective CV based recruitment procedure with video based recruitment where smiles, personality and character count first.  Recruiter and candidate can have video call based interview on their mobile anytime. It provided them with a quick and effective way to shortlist right potential hires.',
         proServices: ['SaaS', 'Recruitment', 'iOS', 'Android'],
         titlephoto: 'assets/content/work_cases/fhportfolio.png',
@@ -171,7 +171,7 @@ export class DataService {
           // { tittle: '', imgPath: '', desc:[''] },
           // { tittle: '', imgPath: '', desc:[''] },
           // { tittle: '', imgPath: '', desc:[''] },
-         ],
+        ],
         furtherMoreTittle: 'UX Design Challenges',
         furtherMore: [
           { desc: 'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' },
@@ -186,7 +186,7 @@ export class DataService {
         title: 'Moving.ful',
         description: 'A marketplace to book moves and earn commission',
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
-        themeColor:'#34aca0',
+        themeColor: '#34aca0',
         detailPage: 'A USA client wanted to develop a marketplace where their customers can book different types of moves online. They also wanted a commission management app that would allow their sponsors, agents and ambassador to refer moves through their system and earn commission whereby increasing sales for the company.',
         proServices: ['Web', 'Moving', 'Industry', 'USA'],
         titlephoto: 'assets/content/work_cases/mfportfolio.png',
@@ -735,72 +735,81 @@ export class DataService {
   //////////////////////////Comapny Page Data/////////////////////////////
   ////////////////////////////////////////////////////////////////////////
 
-  steps = [
-    { title: 'What we do', description: 'We help businesses create fully fledged web and mobile solutions that help them achieve their business goals.', icon: 'assets/icons/company/icon-widgets-6ced206712d1a2f4a1f086ee32c2728fc900b05bd1ea93b170ada9488633b57a.svg', btnText: 'See our Services', route: 'services' },
-    { title: 'How we do it', description: 'We use modern, proven, and efficient technologies and approaches to build stable and scalable applications', icon: 'assets/icons/company/icon-sensor-94d81058fc32a5c1cc0105bafebdce7841f5afd03d77579c257d7153bb95f437.svg', btnText: 'See our TechStack', route: 'technologies' },
-    { title: 'What we do', description: 'We were honored to work with numerous brilliant businesses to help them conquer the digital world.', icon: 'assets/icons/company/icon-works-96e0fa59c3fd2d0090bf405e27481666d62ca0c8dbab0d33a34d4324dffa83ff.svg', btnText: 'See our Works', route: 'works' },
-  ]
+  company = {
 
-  team = {
     headerSection: {
-      title: 'Our Managment Team',
-      description: "Our company's leaders decide what Devunleash is about, what direction we want to go, and how we get there."
+      title: 'We solve your challenges',
+      description: 'By putting design and development talent to work, we build products that engage your users and help you achieve your business objectives.'
     },
 
-    teamMembers: [
-      {
-        id: 0,
-        name: 'Team Member 1',
-        photo: 'https://image.shutterstock.com/image-photo/portrait-mature-business-woman-smile-260nw-255741205.jpg',
-        designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+
+
+    steps: [
+      { title: 'What we do', description: 'We help businesses create fully fledged web and mobile solutions that help them achieve their business goals.', icon: 'assets/services/icon-widgets-6ced206712d1a2f4a1f086ee32c2728fc900b05bd1ea93b170ada9488633b57a.svg', btnText: 'See our Services', route: '/services' },
+      { title: 'How we do it', description: 'We use modern, proven, and efficient technologies and approaches to build stable and scalable applications', icon: 'assets/services/icon-sensor-94d81058fc32a5c1cc0105bafebdce7841f5afd03d77579c257d7153bb95f437.svg', btnText: 'See our TechStack', route: '/technologies' },
+      { title: 'What we do', description: 'We were honored to work with numerous brilliant businesses to help them conquer the digital world.', icon: 'assets/services/icon-works-96e0fa59c3fd2d0090bf405e27481666d62ca0c8dbab0d33a34d4324dffa83ff.svg', btnText: 'See our Works', route: '/works' },
+    ],
+
+    team: {
+      headerSection: {
+        title: 'Our Managment Team',
+        description: "Our company's leaders decide what Devunleash is about, what direction we want to go, and how we get there."
       },
-      {
-        id: 1,
-        name: 'Team Member 2',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35ZWFcjAPWpTxL9-5P0IrWSVsQZk95zbqGzStn7UxhDz_BKc9&s',
-        designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
-      },
-      {
-        id: 2,
-        name: 'Team Member 3',
-        photo: 'https://media.gettyimages.com/photos/handsome-young-man-on-white-background-picture-id523478288?b=1&k=6&m=523478288&s=612x612&w=0&h=aFB0B9sh8rI9ljywgWAEY0HuwTmfNwL4Nn3T9GF5tWw=',
-        designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
-      },
-      {
-        id: 3,
-        name: 'Team Member 4',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprCICTaMs2th48DqYclXI2bJAwmtUiGPF-psJawLhnu3qjLgO&s',
-        designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
-      },
-      {
-        id: 4,
-        name: 'Team Member 5',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRNbQaAy6wEzyHH2vmMI2NuOx72NZa2KZHEwgAUAU5l14GXnEM&s',
-        designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
-      },
-      {
-        id: 5,
-        name: 'Team Member 6',
-        photo: 'https://image.freepik.com/free-photo/portrait-handsome-man-isolated-white-background_38019-394.jpg',
-        designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
-      },
-      {
-        id: 6,
-        name: 'Team Member 7',
-        photo: 'https://backgrounddownload.com/wp-content/uploads/2018/09/man-on-white-background-1.jpg',
-        designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
-      },
-      {
-        id: 7,
-        name: 'Team Member 8',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNpQ885bH7dq2KQ0miH0nQXUzXGMQT56W0p1B6sZnisJfw-FT6Ew&s',
-        designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
-      }
-    ]
+
+      teamMembers: [
+        {
+          id: 0,
+          name: 'Team Member 1',
+          photo: 'https://image.shutterstock.com/image-photo/portrait-mature-business-woman-smile-260nw-255741205.jpg',
+          designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+        },
+        {
+          id: 1,
+          name: 'Team Member 2',
+          photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35ZWFcjAPWpTxL9-5P0IrWSVsQZk95zbqGzStn7UxhDz_BKc9&s',
+          designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+        },
+        {
+          id: 2,
+          name: 'Team Member 3',
+          photo: 'https://media.gettyimages.com/photos/handsome-young-man-on-white-background-picture-id523478288?b=1&k=6&m=523478288&s=612x612&w=0&h=aFB0B9sh8rI9ljywgWAEY0HuwTmfNwL4Nn3T9GF5tWw=',
+          designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+        },
+        {
+          id: 3,
+          name: 'Team Member 4',
+          photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprCICTaMs2th48DqYclXI2bJAwmtUiGPF-psJawLhnu3qjLgO&s',
+          designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+        },
+        {
+          id: 4,
+          name: 'Team Member 5',
+          photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRNbQaAy6wEzyHH2vmMI2NuOx72NZa2KZHEwgAUAU5l14GXnEM&s',
+          designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+        },
+        {
+          id: 5,
+          name: 'Team Member 6',
+          photo: 'https://image.freepik.com/free-photo/portrait-handsome-man-isolated-white-background_38019-394.jpg',
+          designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+        },
+        {
+          id: 6,
+          name: 'Team Member 7',
+          photo: 'https://backgrounddownload.com/wp-content/uploads/2018/09/man-on-white-background-1.jpg',
+          designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+        },
+        {
+          id: 7,
+          name: 'Team Member 8',
+          photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNpQ885bH7dq2KQ0miH0nQXUzXGMQT56W0p1B6sZnisJfw-FT6Ew&s',
+          designation: 'Angular Angular  Angular  Angular  Angular  Angular  Angular  Angular '
+        }
+      ]
+
+    }
 
   }
-
-
 
 
 

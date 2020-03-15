@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { WorksComponent } from './works/works.component';
 import { WorkDetailComponent } from './workDetail/workDetail.component';
 import { DuThemeModule } from './du-theme/du-theme.module';
+import { ServiceDetailComponent } from './serviceDetail/serviceDetail.component';
 
 @NgModule({
    declarations: [
@@ -20,7 +21,8 @@ import { DuThemeModule } from './du-theme/du-theme.module';
       ServicesComponent,
       AboutComponent,
       WorksComponent,
-      WorkDetailComponent
+      WorkDetailComponent,
+      ServiceDetailComponent
    ],
    imports: [
       BrowserModule,

@@ -1,0 +1,16 @@
+<h1> {{items.detailTitle}}</h1>
+{{items.detailPageDescription}}
+{{items.keyfeatureHadding}}
+{{items.keyfeatures}}
+<div *ngFor="let item of items.keyfeatureslist">
+  <img class="img" [src]="item.icon" alt="">
+  <span class="title">{{item.title}}</span>
+
+</div>
+
+{{items.howWedo}}
+<div *ngFor="let item of items.detailFeatures">
+  <img class="project__img" [src]="item.featureImg" alt="">
+  <p class="project__subtitle">{{item.titles}}</p>
+</div>
+{{items.point}}

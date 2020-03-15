@@ -9,12 +9,17 @@ import { DataService } from '../Data Services/data.service';
 })
 export class ServicesComponent implements OnInit {
 
-  services
+  services;
+  data;
   constructor(private router: Router, private dataService: DataService) { }
 
   ngOnInit() {
     this.services = this.dataService.services;
+    this.data = this.dataService.home;
 
+  }
+  routeToServices(item) {
+    this.router.navigate(['/service'], { queryParams: { page: item.id } });
   }
 
 }
