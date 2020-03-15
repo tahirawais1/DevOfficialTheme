@@ -26,6 +26,8 @@ export class WorkDetailComponent implements OnInit {
   }
   routetopage(page){
     this.router.navigate([page]);
+    window.scrollTo(0, 0);
+
   }
 
 }

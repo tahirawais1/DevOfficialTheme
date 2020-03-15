@@ -23,6 +23,11 @@ export class ServicesComponent implements OnInit {
     window.scrollTo(0, 0);
 
   }
+  routetopage(page){
+    this.router.navigate([page]);
+    window.scrollTo(0, 0);
+
+  }
 
 }
 
