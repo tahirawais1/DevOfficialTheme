@@ -4,5 +4,5 @@
   <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'technology'}" (click)="routeto('/technologies')" >technologies</div>
   <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'service'}" (click)="routeto('/services')" >services</div>
   <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'about'}" (click)="routeto('/about')" >Comapany</div>
-  <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'contact'}" (click)="routeto('/contact')" >contact US</div>
+  <div class="contactUs navLink" [ngClass]="{'contactActive': type === 'contact'}" (click)="routeto('/contact')" >contact US</div>
 </div>

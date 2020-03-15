@@ -18,3 +18,23 @@ word-spacing: 3px;
     border-bottom: 1px solid $link-color;
 
 }
+.contactUs{
+    border: 1px solid $link-color;
+    padding: 10px 20px;
+    margin-top: -13px;
+    border-radius: 20px;
+}
+.contactUs:hover{
+    border: 1px solid $link-color;
+    padding: 10px 20px;
+    background-color: $link-color;
+    margin-top: -13px;
+    border-radius: 20px;
+}
+.contactActive{
+    border: 1px solid $link-color;
+    padding: 10px 20px;
+    background-color: $link-color;
+    margin-top: -13px;
+    border-radius: 20px;
+}

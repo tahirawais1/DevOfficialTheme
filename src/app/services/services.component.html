@@ -11,15 +11,16 @@
     </div>
   </div>
 </div>
+
 <section class="section">
+
   <div class="row">
-    <div class="col-md-4 p-t-20 p-b-20" (click)="routeToServices(item)" *ngFor="let item of services?.servicesItems">
-      <div class='bgNorepeat pointer' [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
-        <div class="text-center p-t-30 p-b-30">
+    <div class="col-md-4 p-t-20 p-b-20 " (click)="routeToServices(item)" *ngFor="let item of services?.servicesItems">
+       <img class="bgNorepeat pointer" [src]='item?.imagePath'>
+        <div class="pointer positionrel p-l-30 p-r-30 text-center p-t-30 p-b-30">
           <h5> {{item?.title[0]}} <br>{{item?.title[1]}}</h5>
           <p class="p2">{{item?.description}}</p>
         </div>
-      </div>
     </div>
   </div>
 </section>
