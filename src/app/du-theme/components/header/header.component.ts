@@ -14,7 +14,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
    
   }
-  routeto(item){
-    this.router.navigate([item]);
+  routeto(page){
+    this.router.navigate([page]);
+    window.scrollTo(0, 0);
+
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-headingDesc',
@@ -13,10 +13,15 @@ export class HeadingDescComponent implements OnInit {
   @Input() button;
   @Input() btnwidth = '230px';
   @Input() btnheight = '55px';
+  @Output() click = new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit() {
   }
+  clickEvent(event){
+    this.click.emit(event);
+  }
+
 
 }

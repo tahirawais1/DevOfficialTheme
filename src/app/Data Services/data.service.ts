@@ -76,54 +76,6 @@ export class DataService {
   ////////////////////////////////////////////////////////////////////////
 
   workPage = {
-    morewrkingPage: [
-      {
-        id: 0,
-        title: 'SaaSMax',
-        imagePath: 'https://image.slidesharecdn.com/saasmaxvendorprogram2014-140828094959-phpapp02/95/saasmax-vendor-program-2014-1-638.jpg?cb=1409219472',
-        description: 'Online marketplace for Cloud SaaS applications.',
-        proServices: ['SaaS', 'Web'],
-
-      },
-
-      {
-        id: 1,
-        title: 'AMS Card System',
-        imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
-        description: 'A dynamic card based system to build functionality dynamically',
-        detailPage: 'AMS had developed isolated applications for their drivers, operations managers, call center agents etc. They wanted to develop a unified application platform to enable all different users to manage their business operations on single platform. For this, we developed card system that renders content and journey dynamically based on user role.',
-        proServices: ['web'],
-
-      },
-      {
-        id: 2,
-        title: 'Picpulse',
-        description: '',
-        imagePath: 'https://www.multidots.com/wp-content/uploads/2014/04/Mobile-application.jpg',
-        detailPage: '',
-        proServices: ['web'],
-
-      },
-      {
-        id: 3,
-        title: 'Mars Translation',
-        imagePath: 'https://cdn.dribbble.com/users/837094/screenshots/5907415/mars-translation.jpg',
-        description: '',
-        detailPage: '',
-        proServices: ['web'],
-
-      },
-      {
-        id: 4,
-        title: 'Ving App',
-        imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
-        description: '',
-        detailPage: "Ving lets you share optimised microbursts of information consisting of video, images, key points, assessments, survey etc and also keep track of analytics on engagement and progress metrics for higher management. It's perfect fit for unobtrusive & seamless on the job training and information sharing across your organisation.",
-        proServices: ['SaaS', 'Web'],
-
-      }
-    ],
-
     workitems: [
       {
         id: 0,
@@ -131,6 +83,7 @@ export class DataService {
         description: 'A real-time supply chain management platform for manufacturers, distributors, retailers & sales team.',
         detailPage: 'TradeUnleashed wanted to develop a supply chain platform that would enable manufacturers and distributors to connect to their sales team and trade partners in real time. It would help them gain real-time information access, on-the-go decision making and eliminate all paper work. From detailed back office business operations to on-the-go information access with smart mobile app, all the supply chain control and visibility is on your fingertips with tradeUnleashed.',
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
+        themeColor:'#1476dd',
         proServices: ['SaaS', 'Supply Chain', 'Web', 'iOS', 'Android'],
         titlephoto: 'assets/content/work_cases/tu.png',
         needText: 'The Need',
@@ -179,6 +132,7 @@ export class DataService {
         title: 'HireGoat',
         description: 'Next generation video based recruitment platform',
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
+        themeColor:'#e77621',
         detailPage: 'HireGoat wanted to develop video based platform to eliminate the recruitment overhead. They wanted to replace boring and ineffective CV based recruitment procedure with video based recruitment where smiles, personality and character count first.  Recruiter and candidate can have video call based interview on their mobile anytime. It provided them with a quick and effective way to shortlist right potential hires.',
         proServices: ['SaaS', 'Recruitment', 'iOS', 'Android'],
         titlephoto: 'assets/content/work_cases/fhportfolio.png',
@@ -214,10 +168,10 @@ export class DataService {
         methodologyParagraph: ['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
         methodology: '',
         moreSection: [
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
-        ],
+          // { tittle: '', imgPath: '', desc:[''] },
+          // { tittle: '', imgPath: '', desc:[''] },
+          // { tittle: '', imgPath: '', desc:[''] },
+         ],
         furtherMoreTittle: 'UX Design Challenges',
         furtherMore: [
           { desc: 'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' },
@@ -232,6 +186,7 @@ export class DataService {
         title: 'Moving.ful',
         description: 'A marketplace to book moves and earn commission',
         imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
+        themeColor:'#34aca0',
         detailPage: 'A USA client wanted to develop a marketplace where their customers can book different types of moves online. They also wanted a commission management app that would allow their sponsors, agents and ambassador to refer moves through their system and earn commission whereby increasing sales for the company.',
         proServices: ['Web', 'Moving', 'Industry', 'USA'],
         titlephoto: 'assets/content/work_cases/mfportfolio.png',
@@ -248,9 +203,9 @@ export class DataService {
         methodologyTitle: 'HOW WE BUILT THE SYSTEM',
         methodologyParagraph: ['Our product design and development team worked closely with the client to ensure we thoroughly understand their business needs and objectives. Based on their requirements, we designed & built the system compromising these components & tools.'],
         moreSection: [
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
-          { tittle: 'MOre Section Tittle', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: 'MoreSectiDescription' },
+          // { tittle: '', imgPath: '', desc:[''] },
+          // { tittle: '', imgPath: '', desc:[''] },
+          // { tittle: '', imgPath: '', desc:[''] },
         ],
         furtherMoreTittle: 'UX Design Challenges',
         furtherMore: [
@@ -263,8 +218,55 @@ export class DataService {
       },
 
     ],
+    morewrkingPage: [
+      {
+        id: 0,
+        title: 'SaaSMax',
+        imagePath: 'https://image.slidesharecdn.com/saasmaxvendorprogram2014-140828094959-phpapp02/95/saasmax-vendor-program-2014-1-638.jpg?cb=1409219472',
+        description: 'Online marketplace for Cloud SaaS applications.',
+        proServices: ['SaaS', 'Web'],
 
+      },
 
+      {
+        id: 1,
+        title: 'AMS Card System',
+        imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
+        description: 'A dynamic card based system to build functionality dynamically',
+        detailPage: 'AMS had developed isolated applications for their drivers, operations managers, call center agents etc. They wanted to develop a unified application platform to enable all different users to manage their business operations on single platform. For this, we developed card system that renders content and journey dynamically based on user role.',
+        proServices: ['web'],
+
+      },
+      {
+        id: 2,
+        title: 'Picpulse',
+        description: '',
+        imagePath: 'https://www.multidots.com/wp-content/uploads/2014/04/Mobile-application.jpg',
+        detailPage: '',
+        proServices: ['web'],
+
+      },
+      {
+        id: 3,
+        title: 'Mars Translation',
+        imagePath: 'https://cdn.dribbble.com/users/837094/screenshots/5907415/mars-translation.jpg',
+        description: '',
+        detailPage: '',
+        proServices: ['web'],
+
+      },
+      {
+        id: 4,
+        title: 'Ving App',
+        imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
+        description: '',
+        detailPage: "Ving lets you share optimised microbursts of information consisting of video, images, key points, assessments, survey etc and also keep track of analytics on engagement and progress metrics for higher management. It's perfect fit for unobtrusive & seamless on the job training and information sharing across your organisation.",
+        proServices: ['SaaS', 'Web'],
+
+      }
+    ]
+
+  
 
   }
 
