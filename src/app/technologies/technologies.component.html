@@ -1,29 +1,53 @@
-<app-header type=technology ></app-header>
+<app-header type=technology></app-header>
 
-<div class="section bg-color">
+<div class="section">
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
-      <h1 class="text-center main-h main-font p-l-40 p-r-40"> {{data?.headerSection.tittle}}</h1>
-      <div class="m-t-30 m-b-30 tu-border">
-      </div>
-      <div class="text-center item muted-color f-200 main-font"> {{data?.headerSection.description}}
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-  </div>
-  <!-- <div class="display-flex content-center  m-t-60">
-    <div class="imgParams b-r-3 display-flex content-center"
-      [ngStyle]="{'background-image': 'url(' + data?.imagePath + ')'}"> </div>
-  </div>
-
-  <div class="bottom190 bg-color">
-    <div>
-      <h1 class="main-h p-l-100 f-200 primary-color bottom0 main-font">Project Summary </h1>
+      <h1 class="text-center"> {{data?.headerSection.tittle}}</h1>
+      <div class="m-t-30 m-b-30 tu-border"></div>
+      <p class="text-center"> {{data?.headerSection.description}}</p>
+      <div class="col-md-2"></div>
     </div>
   </div>
-  <div class="text-center">
-    <h1 class="sec-h f-300 main-font p-l-100 p-r-100 m-t--30"> {{data?.needText}}</h1>
-    <p *ngFor="let item of data?.needParagraph" class="p-t-10 p-l-100 p-r-100 f-200 sec-p main-font l-h-50">{{item}}</p>
-  </div> -->
 </div>
+<div class="section">
+  <app-headingDesc heading='We develop for these platforms'
+    description='Software that runs on a single platform can’t meet all the needs of modern businesses. We offer a wide range of services that cover a variety of platforms.'>
+  </app-headingDesc>
+
+  <div class="display-flex content-center">
+    <div class="center-align text-center p-l-30 p-r-30 p-t-70 p-b-70" *ngFor="let item of data?.availtechstack">
+      <img class="techimgheight" [src]='item.imagePath'>
+      <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <app-headingDesc heading='Technology index'
+    description='We use modern technologies that allow us to expertly extend and scale our products.'>
+  </app-headingDesc>
+</div>
+
+<div class="section text-center">
+  <div *ngFor="let item of data?.technologyItems">
+    <h2 class="p-t-20 muted-color">{{item.title}} </h2>
+    <div>
+      <div *ngFor="let items of item.subTitle">
+        <h6>{{items.title}}</h6>
+        <div class="m-t-10 m-b-60 borderbottom"></div>
+        <div class="display-flex content-center">
+          <div class="p-l-40 p-r-40 p-t-30 p-b-30" *ngFor="let tech of items.technologies">
+            <img class="logo" [src]="tech.icon" alt="">
+            <h6 class="p-t-20 p-b-60">{{tech.title}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-headingDesc button='Talk to Us' bgprime=true (click)="routetopage('/contact')"
+  heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
+  for your business.'></app-headingDesc>
+  <app-footer></app-footer>

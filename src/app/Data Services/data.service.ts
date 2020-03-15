@@ -266,8 +266,6 @@ export class DataService {
       }
     ]
 
-  
-
   }
 
 
@@ -281,7 +279,33 @@ export class DataService {
       description: "You don’t need to work with multiple teams, we provide complete end-to-end services from brainstorming business requirements, designing clean & world-class UIs/UX, architecting large scale enterprise grade applications, developing clean & high quality codebase, performing rigorous automated & manual testing, continuous deployment & maintenance.",
       detailPage: ''
     },
+    availtechstack: [
+      {
+        title: 'Web',
+        imagePath: 'assets/techLogos/web.png',
+      },
 
+      {
+        title: 'Android',
+        imagePath: 'assets/techLogos/android.png',
+      },
+      {
+        title: 'IOS',
+        imagePath: 'assets/techLogos/ios.png',
+      },
+      {
+        title: 'Wearable',
+        imagePath: 'assets/techLogos/wearable.png',
+      },
+      // {
+      //   title: 'TV',
+      //   imagePath: 'assets/techLogos/tv.png',
+      // },
+      {
+        title: 'IOT',
+        imagePath: 'assets/techLogos/iot.png',
+      },
+    ],
     technologyItems: [
       {
         id: 0,
@@ -290,16 +314,16 @@ export class DataService {
           {
             title: 'Android',
             technologies: [
-              { title: 'kotlin', icon: 'assets/content/logos/kotlin-logo-ed83fbd440eac01c60a4486e5026dd34d7e518c29323db28984cf9f3d49f7f39.svg' },
-              { title: 'JavaScript', icon: 'assets/content/logos/java-logo-562e410545d7dcec50e503cf48d931edc4d351a6f5dd0021871bc7dc9692b0c3.png' },
-              { title: 'NativeScript', icon: 'assets/content/logos/nativescript.png' },
+              { title: 'kotlin', icon: 'assets/techIcon/kotlin.svg' },
+              { title: 'JavaScript', icon: 'assets/techIcon/java.png' },
+              { title: 'NativeScript', icon: 'assets/techIcon/nativescript.png' },
             ]
           },
           {
             title: 'IOS', technologies: [
-              { title: 'Swift', icon: 'assets/content/logos/swift-logo-7e147940cfd014ad0eb87ef26ba626ba01beaffb5cce23b2c88599f492650ee3.svg' },
-              { title: 'ReactNatvie', icon: 'assets/content/logos/reactnative.png' },
-              { title: 'NativeScript', icon: 'assets/content/logos/nativescript.png' },
+              { title: 'Swift', icon: 'assets/techIcon/swift.svg' },
+              { title: 'ReactNatvie', icon: 'assets/techIcon/reactnative.png' },
+              { title: 'NativeScript', icon: 'assets/techIcon/nativescript.png' },
             ]
           }
         ],
@@ -312,39 +336,38 @@ export class DataService {
           {
             title: 'FrontEnd',
             technologies: [
-              { title: 'JavaScript', icon: 'assets/content/logos/java-script-logo-9f96b74831d46580fb07ce3b8abdbe2b41112d212408dee1887d3dd12c3d0752.png' },
-              { title: 'TypeScript', icon: 'assets/content/logos/type-script-logo-6e80dc0d35bb6e52e31f32f13bc03f3d2692c38cb472744e4c497c9e4e338c14.svg' },
-              { title: 'HTML5', icon: 'assets/content/logos/html-5-logo-710a431837e6c441d9f2b9ef77a2fe08953904fc29c11f736a4b2bd281b44220.png' },
-              { title: 'CSS3', icon: 'assets/content/logos/css-3-logo-55de5a1b369cebc66576b3a0e969cb3144f1df53aa50dee6d93d926aed4dab46.png' },
-              { title: 'Angular', icon: 'assets/content/logos/angularjs-logo-caf056046f2d1f1e3e69c5ebee5e42be12941e1131be22bfbee0c747ba50805f.png' },
-              { title: 'React', icon: 'assets/content/logos/reactnative.png' },
+              { title: 'JavaScript', icon: 'assets/techIcon/java-script.png' },
+              { title: 'TypeScript', icon: 'assets/techIcon/type-script.svg' },
+              { title: 'HTML5', icon: 'assets/techIcon/html-icon.png' },
+              { title: 'CSS3', icon: 'assets/techIcon/css-icon.png' },
+              { title: 'Angular', icon: 'assets/techIcon/angular-icon.png' },
+              { title: 'React', icon: 'assets/techIcon/reactnative.png' },
             ]
           },
           {
             title: 'BackEnd',
             technologies: [
-              { title: 'Node JS', icon: 'assets/content/logos/node-js-logo-7cd1252e2276cf97476fe8a4fa93d89714a34eb356b2b4625b9db047f904b268.png' },
-              { title: 'Groovy/Grails', icon: 'assets/content/logos/rails-logo-2671cee5a7adb07a31574f5550974d49d89fb1c96d129984af74cbd31b696526.png' },
+              { title: 'Node JS', icon: 'assets/techIcon/node.png' },
+              { title: 'Groovy/Grails', icon: 'assets/techIcon/rails.png' },
 
             ]
           },
           {
             title: 'DataBase',
             technologies: [
-              { title: 'MySQL', icon: 'assets/content/logos/mysql-logo-98a6af486947ad007ecf06c07987a6035663a45c6980260e46602bbab48c5986.png' },
-              { title: 'MSSQL', icon: 'assets/content/logos/mssql.png' },
-              // { title: 'Maria DB', icon: '' },
-              { title: 'PostgreSQL', icon: 'assets/content/logos/postgresql-logo-588a629055edb7688d91e71f504daaea1533a2d822846abc73b1156d20bb9e46.png' },
-              { title: 'MongoDB', icon: 'assets/content/logos/mongo-db-logo-f166401da60dfa28ab5c6a54d318a9ddd4e27edffc57f2bc1b177f54fdec67be.png' },
+              { title: 'MySQL', icon: 'assets/techIcon/mysql.png' },
+              { title: 'MSSQL', icon: 'assets/techIcon/mssql.png' },
+              { title: 'PostgreSQL', icon: 'assets/techIcon/postgresql.png' },
+              { title: 'MongoDB', icon: 'assets/techIcon/mongo.png' },
             ]
           },
           {
             title: 'Message brokers',
             technologies: [
-              { title: 'ActiveMQ', icon: 'assets/content/logos/activemq.png' },
-              { title: 'RabbitMQ', icon: 'assets/content/logos/rabbitmq.png' },
-              { title: 'Redis', icon: 'assets/content/logos/redis-logo-f4c1807f4e6f2e23380409632a09aeeb3c37b2cd13e6b7d0c0c853fff25da3ef.png' },
-              { title: 'Kafka', icon: 'assets/content/logos/kafka.png' },
+              { title: 'ActiveMQ', icon: 'assets/techIcon/activemq.png' },
+              { title: 'RabbitMQ', icon: 'assets/techIcon/rabbitmq.png' },
+              { title: 'Redis', icon: 'assets/techIcon/redis.png' },
+              { title: 'Kafka', icon: 'assets/techIcon/kafka.png' },
             ]
           },
         ],
@@ -357,10 +380,10 @@ export class DataService {
             title: 'Deployment',
 
             technologies: [
-              { title: 'AWS', icon: 'assets/content/logos/aws-logo-5776e249427bb214a901e0a04c370e2ae172cc17b1816c6548bc45163ed266fb.png' },
-              { title: 'GCP', icon: 'assets/content/logos/gcp.png' },
-              { title: 'Docker', icon: 'assets/content/logos/docker.png' },
-              { title: 'Kubernetes', icon: 'assets/content/logos/kubernets.png' },
+              { title: 'AWS', icon: 'assets/techIcon/aws.png' },
+              { title: 'GCP', icon: 'assets/techIcon/gcp.png' },
+              { title: 'Docker', icon: 'assets/techIcon/docker.png' },
+              { title: 'Kubernetes', icon: 'assets/techIcon/kubernets.png' },
               // { title: 'Openshift', icon: '' },
               // { title: 'Linux and windows', icon: '' },
             ]
@@ -370,10 +393,10 @@ export class DataService {
             title: 'Testing and Automation',
 
             technologies: [
-              { title: 'Gitlab CLI', icon: 'assets/content/logos/icon-github-9edf17205f23c1bf30e497f312e6e39ec5d5c4b2a643dcb36771853707e49604.svg' },
-              { title: 'Jenkins', icon: 'assets/content/logos/jenkins-logo-03161b577c1e9c5516c450f053f1a921129272bc47a7933756a0dc3cb4ec1c5d.png' },
-              { title: 'CircleCI', icon: 'assets/content/logos/circleci.png' },
-              { title: 'BitBucket', icon: 'assets/content/logos/bitbucket.png' },
+              { title: 'Gitlab CLI', icon: 'assets/techIcon/github.svg' },
+              { title: 'Jenkins', icon: 'assets/techIcon/jenkins.png' },
+              { title: 'CircleCI', icon: 'assets/techIcon/circleci.png' },
+              { title: 'BitBucket', icon: 'assets/techIcon/bitbucket.png' },
             ]
           },
 
@@ -383,8 +406,8 @@ export class DataService {
 
 
             technologies: [
-              { title: 'Powerbi', icon: 'assets/content/logos/powerbi.png' },
-              { title: 'Pyton', icon: 'assets/content/logos/python.png' },
+              { title: 'Powerbi', icon: 'assets/techIcon/powerbi.png' },
+              { title: 'Pyton', icon: 'assets/techIcon/python.png' },
             ]
           },
 
@@ -413,7 +436,7 @@ export class DataService {
         id: 0,
         title: ['Blockchain', 'Solutions'],
         routeTo: 'blackChain',
-        imagePath: "assets/service/blockchain.png",
+        imagePath: "assets/servicesBg/blockchain.png",
         description: 'DevUnleash provides custom-tailored blockchain solutions. From supply-chain blockchain to complete ledgers and exchanges, we design and develop a wide range of blockchain solutions. ',
         detailTitle: 'Blockchain Technology Solutions',
         detailPageDescription: 'Blockchain is a key component of the decentralized computing paradigm. It is a better computing topology for the increasingly privacy-conscious consumers in the software industry. We offer blockchain solutions for a wide variety of problems. It can be anything from a simple decentralized transaction management system to a full-fledged crypto exchange. If you need any custom decentralized solution we’ll be the right match for you. ',
@@ -435,7 +458,7 @@ export class DataService {
       {
         id: 1,
         title: ['IOT', 'Development'],
-        imagePath: "assets/service/iot.png",
+        imagePath: "assets/servicesBg/iot.png",
         description: 'We have the expertise to create visualization dashboards and management applications for IoT frameworks. We can also integrate our solutions with various IoT gateways.',
         detailTitle: 'IOT Development',
         detailPageDescription: 'With the advent of modern IoT technologies, harnessing the real-time sensor data and visualizing it has become increasingly important. Controlling your equipment remotely from virtually anywhere eases the physical workforce and makes the management easier. We provide custom-tailored solutions for IoT dashboards and management consoles.',
@@ -456,7 +479,7 @@ export class DataService {
       {
         id: 2,
         title: ['Mobile', 'Development'],
-        imagePath: "assets/service/mobile.png",
+        imagePath: "assets/servicesBg/mobile.png",
         description: 'We have the expertise to devise and build native, cross-platform and hybrid mobile applications for android and iOS.',
         detailTitle: 'Mobile Application Development',
         detailPageDescription: 'Smartphones have changed the way we interact with data. Having a custom mobile application for your software solutions has never been more important to reach a bigger audience. The sheer magnitude of users for smartphones dictates an impelling need for the mobile presence. We help you build beautiful word-class mobile applications for all mobile platforms - iOS, iPad, Android, tablets',
@@ -479,7 +502,7 @@ export class DataService {
       {
         id: 3,
         title: ['Web', 'Development'],
-        imagePath: "assets/service/web.png",
+        imagePath: "assets/servicesBg/web.png",
         description: 'We offer single-tenant and multi-tenant SaaS application design and development from concept to completion. We have a dedicated team capable of transforming any high-level business idea into a fully functional SaaS application.',
         detailTitle: 'Web/SaaS application development ',
         detailPageDescription: 'Web Application development is our core service which complements all the other services we offer. We have expertise in developing full-stack web applications in various frontend and backend technologies. We offer the following services for Web application development',
@@ -503,7 +526,7 @@ export class DataService {
       {
         id: 4,
         title: ['Deployment', '& Automation'],
-        imagePath: "assets/service/deployment.png",
+        imagePath: "assets/servicesBg/deployment.png",
         description: 'DevUnleash excels in automating your development and deployment needs. We can set up the complete infrastructure for your deployment models on the cloud and on-premise and automate it with the latest CI/CD techniques.',
         detailTitle: 'Deployment and Automation',
         detailPageDescription: 'We tackle all the deployment needs of our customers. We design the complete deployment infrastructure with both the single A-Z and multi A-Z topologies for high availability in multiple zones. We have expertise in scaling solutions horizontally for better throughput and optimal performance. We adhere to the 12-factor application development paradigm to leverage the inherent scalability of the platforms. ',
@@ -575,7 +598,7 @@ export class DataService {
       {
         id: 5,
         title: ['Testing', ' and QA'],
-        imagePath: "assets/service/testing.png",
+        imagePath: "assets/servicesBg/testing.png",
         description: 'We offer services for load testing on various metrics, security vulnerability testing and E2E functional testing. We also give performance optimization support and vulnerability removal consultation. ',
         detailTitle: 'Testing and Quality issurance',
         detailPageDescription: 'Testing goes hand in hand with any sort of software development. To ensure the production-grade quality of any application, it must go through rigorous testing from various perspectives. We offer our services for automated testing of the following types',
@@ -610,7 +633,7 @@ export class DataService {
       {
         id: 6,
         title: ['Data', 'Analysis'],
-        imagePath: "assets/service/data.png",
+        imagePath: "assets/servicesBg/data.png",
         description: 'Data analysis gives you insight into the business domain and helps minimize the risk of any chance-based decision. Business Intelligence, in general, proves to be a very useful tool for crucial business decisions. We offer our services for data modeling, data cleansing, data analytics, and data visualization for deeper business insights. ',
         detailTitle: 'Data Analytics and Business Intelligence',
         detailPageDescription: 'We have experience working with PowerBI reports and custom graphing libraries in Javascript and python. We can devise custom visualizations in new applications as well as PowerBI reports. Our Deep Learning skills also go hand-in-hand with our data analytics skills and enable us to provide meaningful prospective and retrospective data analytics.',
@@ -626,7 +649,7 @@ export class DataService {
       {
         id: 7,
         title: ['Machine', 'Learning & AI'],
-        imagePath: "assets/service/machine.png",
+        imagePath: "assets/servicesBg/machine.png",
         description: 'Due to the dynamic nature of the ML domain, it is really important to stay up to date with the latest trends to stay relevant to the domain. We’ve been exploring the latest AI developments in the fields of image processing and natural language processing over the years and developing solutions to cater to modern needs with the latest research in the field.',
         detailTitle: 'Machine Learning and Artifical Intelligence',
         detailPageDescription: 'Due to the dynamic nature of the ML domain, it is really important to stay up to date with the latest trends to stay relevant to the domain. We’ve been exploring the latest AI developments in the fields of image processing and natural language processing over the years and developing solutions to cater to modern needs with the latest research in the field. We offer our services in the following subdomains of AI',
@@ -646,7 +669,7 @@ export class DataService {
       {
         id: 8,
         title: ['UI/UX', ' Design'],
-        imagePath: "assets/service/uiux.png",
+        imagePath: "assets/servicesBg/uiux.png",
         description: 'We provide top-notch UI/UX development services. Get an eye-catching look and feel for your solutions, increase your user interaction and drive sales.',
         detailTitle: 'UI/ UX Design',
         detailPageDescription: 'Creating behavioral user experience is a key to satisfied customers and hence increased adoption of your product. Our UX team caters to all your design needs by researching your business domain and creating specific designs that can fulfill your users business niche with minimum interaction. We excel in designing your abstract ideas onto the screen with the best possible user journey.',
@@ -666,7 +689,7 @@ export class DataService {
       {
         id: 9,
         title: ['Project', 'Management'],
-        imagePath: "assets/service/project.png",
+        imagePath: "assets/servicesBg/project.png",
         description: 'No matter whether it is a complex solution implementation, a data migration, application integration, or another technology project, DevUnleash project management services deliver the results you aim for.',
         detailTitle: 'Project Management',
         detailPageDescription: 'In every project, we assemble all contributors and business owners and set up an effective environment for collaboration. Clear and frequent communication and alignment on roles and responsibilities are the key to the success of each project and minimize risks and costs.',
@@ -686,7 +709,7 @@ export class DataService {
       {
         id: 10,
         title: ['Digital', 'Marketing'],
-        imagePath: "assets/service/marketing.png",
+        imagePath: "assets/servicesBg/marketing.png",
         description: 'We provide more than just high volume traffic. You’ll get more ROI, more accountability and transparency of the marketing gains you are getting. We’ll fulfill the expectations you have about your venture and envision a future with maximum Return On Investment.',
         detailTitle: 'Digital Marketing',
         detailPageDescription: "It’s never been easy to reach your target audience with digital marketing. You can instantly click a billion users' industry as your target audience. More than four and a half billion consumers use the internet worldwide and make a perfect sample group for targetted advertising.",

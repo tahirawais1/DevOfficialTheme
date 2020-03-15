@@ -1,5 +1,25 @@
-<app-header type=service ></app-header>
+<app-header type=service></app-header>
 
-<p>
-  services works!
-</p>
+<div class="section">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h1 class="text-center"> {{services?.headerSection.title}}</h1>
+      <div class="m-t-30 m-b-30 tu-border"></div>
+      <p class="text-center"> {{services?.headerSection.description}}</p>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
+<section class="section">
+  <div class="row">
+    <div class="col-md-4" (click)="routeToServices(item)" *ngFor="let item of services?.servicesItems">
+      <div [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+        <div class="text-center">
+          <h5> {{item?.title[0]}} <br>{{item?.title[1]}}</h5>
+          <p class="p2">{{item?.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

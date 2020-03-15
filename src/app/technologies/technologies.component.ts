@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../Data Services/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-technologies',
@@ -9,10 +10,12 @@ import { DataService } from '../Data Services/data.service';
 export class TechnologiesComponent implements OnInit {
 
   data ;
-  constructor(private dataService: DataService) { }
+  constructor(private router: Router, private dataService: DataService) { }
 
   ngOnInit() {
     this.data = this.dataService.technology;
   }
-
+  routetopage(page){
+    this.router.navigate([page]);
+  }
 }
