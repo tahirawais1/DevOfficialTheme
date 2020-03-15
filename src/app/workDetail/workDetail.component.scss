@@ -3,8 +3,9 @@
     max-width: 480px;
     width: 300px;
     min-width: 200px;
-    background-size: cover;
+    background-size: contain;
     z-index: 1;
+    background-repeat: no-repeat;
 }
 
 .bottom190{
