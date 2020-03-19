@@ -12,6 +12,7 @@ export class ButtonComponent implements OnInit {
   @Input() text = '';
   @Input() type = '';
   @Input() class = '';
+  @Input() backgroundColor = '';
   @Output() click = new EventEmitter<any>();
 
 

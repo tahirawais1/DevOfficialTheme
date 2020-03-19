@@ -4,7 +4,7 @@
   <h2>Recent <br> <span class="p-l-50"> Projects </span></h2>
   <div *ngFor="let item of workings?.workitems; let i = index">
     <div class="row p-t-155 " *ngIf="i % 2 == 1">
-      <div class="col-md-5 pointer workBoxSize" (click)="routeto(item.title)"
+      <div class="col-md-7 pointer workBoxSize" (click)="routeto(item.title)"
         [ngStyle]="{'background-color': item?.themeColor }">
         <div class="portfoliobox">
           <img class="portfolioimg" [src]='item?.imagePath'>
@@ -12,11 +12,11 @@
           <div class="subtittle p-l-20 p-b-30"> {{item?.description}}</div>
         </div>
       </div>
-      <div class="col-md-7"></div>
+      <div class="col-md-5"></div>
     </div>
     <div class="row p-t-155 " *ngIf="i % 2 == 0">
-      <div class="col-md-7"></div>
-      <div class="col-md-5 pointer workBoxSize" (click)="routeto(item.title)"
+      <div class="col-md-5"></div>
+      <div class="col-md-7 pointer workBoxSize" (click)="routeto(item.title)"
         [ngStyle]="{'background-color': item?.themeColor }">
         <div class="portfoliobox">
           <img class="portfolioimg" [src]='item?.imagePath'>
