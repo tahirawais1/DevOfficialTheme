@@ -61,10 +61,10 @@ export class DataService {
         title: 'Wearable',
         imagePath: 'assets/techLogos/wearable.svg',
       },
-      // {
-      //   title: 'TV',
-      //   imagePath: 'assets/techLogos/tv.svg',
-      // },
+      {
+        title: 'TV',
+        imagePath: 'assets/techLogos/tv.svg',
+      },
       {
         title: 'IOT',
         imagePath: 'assets/techLogos/iot.svg',
@@ -293,10 +293,10 @@ export class DataService {
         title: 'IOS',
         imagePath: 'assets/techLogos/ios.png',
       },
-      {
-        title: 'Wearable',
-        imagePath: 'assets/techLogos/wearable.png',
-      },
+      // {
+      //   title: 'Wearable',
+      //   imagePath: 'assets/techLogos/wearable.png',
+      // },
       // {
       //   title: 'TV',
       //   imagePath: 'assets/techLogos/tv.png',

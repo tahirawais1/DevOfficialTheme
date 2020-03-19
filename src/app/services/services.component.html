@@ -24,7 +24,8 @@
     </div>
   </div>
 </section>
-<div class="section text-center p-l-60 p-r-60">
+
+<div  class="smallnodisplay section text-center p-l-60 p-r-60">
   <app-headingDesc heading='Distributed responsibilities. One common goal.'
     description='Each member of the Devunleash team has their own responsibilities, but we all work toward a common goal: providing you with a software solution that are the most beneficial for your businesses'>
   </app-headingDesc>
@@ -108,8 +109,8 @@
   <app-headingDesc bgprime=true heading='Technology index'
     description='We use modern, proven technologies and approaches to build performant and scalable digital products for mobile and web. Check out the technologies we rely on.'>
   </app-headingDesc>
-  <div class="display-flex content-center">
-    <div class="center-align text-center p-l-60 p-r-60 p-t-70 p-b-70" *ngFor="let item of data?.techstack">
+  <div class="row">
+    <div class="col-md-2 center-align text-center p-t-70 p-b-70" *ngFor="let item of data?.techstack">
       <img class="techimgheight" [src]='item.imagePath'>
       <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
     </div>
@@ -117,6 +118,8 @@
   <app-button text="Explore our Tech Stack" (click)="routetopage('/technologies')" type=outline width="250px"
     height="50px"></app-button>
 </div>
+
+
 <div class="section">
   <app-headingDesc heading='Need a skillful solution provider?'
   button="Talk to Us" (click)="routetopage('/contact')"

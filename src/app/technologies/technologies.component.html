@@ -11,18 +11,32 @@
     </div>
   </div>
 </div>
-<div class="section">
+<div class="smallnodisplay section">
   <app-headingDesc heading='We develop for these platforms'
     description='Software that runs on a single platform can’t meet all the needs of modern businesses. We offer a wide range of services that cover a variety of platforms.'>
   </app-headingDesc>
 
   <div class="display-flex content-center">
-    <div class="center-align text-center p-l-30 p-r-30 p-t-70 p-b-70" *ngFor="let item of data?.availtechstack">
+    <div class="center-align text-center p-l-10 p-r-10 p-t-70 p-b-70" *ngFor="let item of data?.availtechstack">
       <img class="techimgheight" [src]='item.imagePath'>
       <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
     </div>
   </div>
 </div>
+
+<div class="bignodisplay section">
+  <app-headingDesc heading='We develop for these platforms'
+    description='Software that runs on a single platform can’t meet all the needs of modern businesses. We offer a wide range of services that cover a variety of platforms.'>
+  </app-headingDesc>
+
+  <div class="content-center">
+    <div class="center-align text-center p-t-70 p-b-70" *ngFor="let item of data?.availtechstack">
+      <img class="techimgheight" [src]='item.imagePath'>
+      <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
+    </div>
+  </div>
+</div>
+
 <div class="section">
   <app-headingDesc heading='Technology index'
     description='We use modern technologies that allow us to expertly extend and scale our products.'>
@@ -36,8 +50,8 @@
       <div *ngFor="let items of item.subTitle">
         <h6>{{items.title}}</h6>
         <div class="m-t-10 m-b-60 borderbottom"></div>
-        <div class="display-flex content-center">
-          <div class="p-l-40 p-r-40 p-t-30 p-b-30" *ngFor="let tech of items.technologies">
+        <div class="row">
+          <div class="col-md 2 p-t-30 p-b-30" *ngFor="let tech of items.technologies">
             <img class="logo" [src]="tech.icon" alt="">
             <h6 class="p-t-20 p-b-60">{{tech.title}}</h6>
           </div>
@@ -46,6 +60,7 @@
     </div>
   </div>
 </div>
+
 <div class="p-b-60">
 <app-headingDesc button='Talk to Us' bgprime=true (click)="routetopage('/contact')"
   heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution

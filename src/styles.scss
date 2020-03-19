@@ -13,6 +13,19 @@ body{
     color: $secondary-color;
 
 }
+
+@media screen and (max-width: 769px) {
+  .smallnodisplay{
+    display: none !important;
+  }
+
+}
+@media screen and (min-width: 770px) {
+  .bignodisplay{
+      display: none !important;
+  }
+}
+
 @font-face {
 	font-family: "RadikalW01-Light";
 	font-weight: normal;
@@ -34,17 +47,13 @@ body{
 	src: url("assets/fonts/RadikalW01/Radikal-W01-Medium-58c4a02eec00edb7022cabf10b43d66e7e110f182a7895d84aec0c7d5ac6906d.ttf") format("truetype")
 }
 
-
-
-
-
-  @font-face {
+@font-face {
     
     font-family: "Radikal";
     font-weight: 100;
     font-style: italic;
     src: url("assets/fonts/Radikal/radikal_ultrathin_italic-ae35b1708da5a68fe2113a07a2f667d30a338da8a7675e36fa62d26d181b2726.ttf") ; 
-  }
+}
   @font-face {
     
     font-family: "Radikal";
@@ -123,3 +132,52 @@ body{
     font-style: italic;
     src: url("assets/fonts/Radikal/radikal_black_italic-ad1512482185be32ea28a4f06da5ae93fb99fff965bc8f63087a7358bbcb4f2b.ttf") ;
   }
+
+
+
+
+
+
+
+  .section--top-home .particle-slider,
+  .section--top-company .particle-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    z-index: 6;
+    margin: 7% 5%;
+  }
+  .section--top-company .particle-slider {
+    margin: 3% 5%;
+  }
+  @media (max-width: 768px) {
+    .section--top-company .particle-slider {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .section--top-home h1.section__title {
+    font-size: 66px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 768px) {
+    .section--top-home h1.section__title {
+      font-size: 36px;
+    }
+  }
+
+
+.section--top-home .particle-slider-mobile {
+  background: url('assets/techIcon/devLogo.png')
+    no-repeat center;
+  background-size: contain;
+}
+
+
+// .section--top-company .particle-slider-mobile {
+//   background: url(https://Devunleash.com/assets/backgrounds/company-hero-bg-d943ff0299db1c38543900a98ff1d266998e0f5be6be09c2ceb0953cbea384b0.png)
+//     no-repeat center 80%;
+//   background-size: 100% auto;
+// }

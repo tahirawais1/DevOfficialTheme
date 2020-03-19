@@ -14,12 +14,24 @@
 
 </div>
 
-<div class="section p-l-100 p-r-100">
+<div class="bignodisplay section" *ngFor="let item of workings?.workitems">
+  <div class="portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+  </div>
+  <div class="p-t-20">
+    <h4> {{item?.title}}</h4>
+    <div class="subtittle p-b-30"> {{item?.description}}</div>
+    <div class="p2 p-b-60">{{item.detailPage}}</div>
+    <app-button text="See full case study" (click)="routetoDetail(item.title)" type=fill width="250px" height="50px">
+    </app-button>
+  </div>
+</div>
+
+<div class="smallnodisplay section p-l-100 p-r-100">
   <div *ngFor="let item of workings?.workitems; let i = index">
     <div class="row p-t-100" *ngIf="i % 2 == 0">
       <div class="col-sm-5 portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
       </div>
-      <div class="col-md-7 p-l-100">
+      <div class="col-md-7 ">
         <h4> {{item?.title}}</h4>
         <div class="subtittle p-b-30"> {{item?.description}}</div>
         <div class="display-flex p-b-30">
@@ -28,7 +40,8 @@
           </div>
         </div>
         <div class="p2 p-b-60">{{item.detailPage}}</div>
-        <app-button text="See full case study" (click)="routetoDetail(item.title)" type=fill width="250px" height="50px"></app-button>
+        <app-button text="See full case study" (click)="routetoDetail(item.title)" type=fill width="250px"
+          height="50px"></app-button>
       </div>
     </div>
     <div class="row p-t-100" *ngIf="i % 2 == 1">
@@ -41,7 +54,8 @@
           </div>
         </div>
         <div class="p2 p-b-60">{{item.detailPage}}</div>
-        <app-button text="See full case study" (click)="routetoDetail(item.title)" type=fill width="250px" height="50px"></app-button>
+        <app-button text="See full case study" (click)="routetoDetail(item.title)" type=fill width="250px"
+          height="50px"></app-button>
       </div>
       <div class="col-sm-6 portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
       </div>
@@ -58,17 +72,19 @@
   <app-headingDesc heading='Apps for all screens'
     description='Using the latest technologies, our app development company helps businesses and individuals establish their presence on any modern device and platform – Android IOS and Web.'>
   </app-headingDesc>
-  <div class="display-flex content-center">
-    <div class="center-align text-center p-l-60 p-r-60 p-t-70 p-b-70" *ngFor="let item of data?.techstack">
+  <div class="row">
+    <div class="col-md-2 center-align text-center p-t-70 p-b-70" *ngFor="let item of data?.techstack">
       <img class="techimgheight" [src]='item.imagePath'>
       <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
     </div>
   </div>
-  <app-button text="Explore our Tech Stack" (click)="routetopage('/technologies')" type=fill width="250px" height="50px"></app-button>
+  <app-button text="Explore our Tech Stack" (click)="routetopage('/technologies')" type=fill width="250px"
+    height="50px"></app-button>
 </div>
 
 <div class="p-b-60">
-  <app-headingDesc bgprime=true button='Contact us' (click)="routetopage('/contact')"  heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
+  <app-headingDesc bgprime=true button='Contact us' (click)="routetopage('/contact')"
+    heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
     for your business.'></app-headingDesc>
 </div>
 <app-footer></app-footer>

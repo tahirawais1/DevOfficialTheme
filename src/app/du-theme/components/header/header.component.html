@@ -1,8 +1,20 @@
-<div class="p-t-30 p-b-30 bg-color display-flex devheader content-right">
+<div class="smallnodisplay  p-t-30 p-b-30 bg-color display-flex devheader content-right">
   <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'home'}" (click)="routeto('/home')" >Home</div>
   <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'works'}" (click)="routeto('/works')" >Works</div>
   <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'technology'}" (click)="routeto('/technologies')" >technologies</div>
   <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'service'}" (click)="routeto('/services')" >services</div>
   <div class="navLink m-l-15 m-r-15" [ngClass]="{'activate': type === 'about'}" (click)="routeto('/about')" >Comapany</div>
   <div class="contactUs navLink" [ngClass]="{'contactActive': type === 'contact'}" (click)="routeto('/contact')" >contact US</div>
+</div>
+
+<div class="bignodisplay dropdown dropleft">
+  <i type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="fas fa-bars"></i>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" (click)="routeto('/home')"> Home</a>
+    <a class="dropdown-item" (click)="routeto('/works')"> Works</a>
+    <a class="dropdown-item" (click)="routeto('/technologies')"> technologies</a>
+    <a class="dropdown-item" (click)="routeto('/services')"> services</a>
+    <a class="dropdown-item" (click)="routeto('/about')"> Comapany</a>
+    <a class="dropdown-item" (click)="routeto('/contact')"> contact US</a>
+  </div>
 </div>
