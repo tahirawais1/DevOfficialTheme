@@ -1,5 +1,17 @@
 <app-header></app-header>
-
+<div class="particle-slider" id="particle-slider" >
+  <div class="slides">
+    <div class="slide" id="first-slide" data-src="assets/D-Day-thick-White-Edges-v2.png">
+    </div>
+  </div>
+  <canvas class="draw" style="height: 50vh;"></canvas>
+  <div class="container">
+    <div class="section__heading">
+      <p class="section__subtitle scale-in-bottom">We help brands and businesses solve their challenges with gratifying and
+        meaningful web and mobile solutions</p>
+    </div>
+  </div>
+</div>
 <div class="slide-in-bottom section text-center">
   <app-headingDesc [heading]='heading' [description]='description'></app-headingDesc>
 
@@ -10,7 +22,8 @@
     </div>
 
   </div>
-  <app-button text="Explore our services" (click)="routetopage('/services')" type=fill width="250px" height="50px"></app-button>
+  <app-button text="Explore our services" (click)="routetopage('/services')" type=fill width="250px" height="50px">
+  </app-button>
 
 </div>
 
