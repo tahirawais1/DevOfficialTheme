@@ -11,7 +11,7 @@ export class HeadingDescComponent implements OnInit {
   @Input() description;
   @Input() bgprime = false;
   @Input() button;
-  @Input() btnwidth = '230px';
+  @Input() btnwidth = '240px';
   @Input() btnheight = '55px';
   @Output() click = new EventEmitter<any>();
 

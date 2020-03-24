@@ -11,11 +11,11 @@
     </div>
 
     <div class="p-t-30" *ngIf="bgprime && button">
-        <app-button [text]="button" type=outline (click)="clickEvent($event)" [width]="btnwidth" [height]="btnheight">
+        <app-button [text]="button" type=fill (click)="clickEvent($event)" [width]="btnwidth" [height]="btnheight">
         </app-button>
     </div>
     <div class="p-t-30" *ngIf="!bgprime && button">
-        <app-button [text]="button" type=fill (click)="clickEvent($event)" [width]="btnwidth" [height]="btnheight">
+        <app-button [text]="button" type=outline (click)="clickEvent($event)" [width]="btnwidth" [height]="btnheight">
         </app-button>
     </div>
 </div>

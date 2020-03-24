@@ -82,9 +82,9 @@ export class DataService {
         title: 'TradeUnleashed',
         description: 'A real-time supply chain management platform for manufacturers, distributors, retailers & sales team.',
         detailPage: 'TradeUnleashed wanted to develop a supply chain platform that would enable manufacturers and distributors to connect to their sales team and trade partners in real time. It would help them gain real-time information access, on-the-go decision making and eliminate all paper work. From detailed back office business operations to on-the-go information access with smart mobile app, all the supply chain control and visibility is on your fingertips with tradeUnleashed.',
-        imagePath: 'assets/portfolio/tuportfolio4.png',
+        imagePath: 'assets/portfolio/tuportfolio6.png',
         themeColor: '#1476dd',
-        proServices: ['SaaS', 'Supply Chain', 'Web', 'iOS', 'Android'],
+        proServices: ['SaaS', 'Web', 'iOS', 'Android'],
         titlephoto: 'assets/portfolio/tu.png',
         needText: 'The Need',
         needParagraph:

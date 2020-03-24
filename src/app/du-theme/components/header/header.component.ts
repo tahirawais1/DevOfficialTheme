@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
 })
 
 export class HeaderComponent implements OnInit {
+
 @Input() type = 'home'
+
   constructor(private router: Router) { }
 
   ngOnInit() {
