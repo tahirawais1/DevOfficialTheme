@@ -745,8 +745,8 @@ export class DataService {
 
 
     steps: [
-      { title: 'What we do', description: 'We help businesses create fully fledged web and mobile solutions that help them achieve their business goals.', icon: 'assets/services/icon-widgets-6ced206712d1a2f4a1f086ee32c2728fc900b05bd1ea93b170ada9488633b57a.svg', btnText: 'See our Services', route: '/services' },
-      { title: 'How we do it', description: 'We use modern, proven, and efficient technologies and approaches to build stable and scalable applications', icon: 'assets/services/icon-sensor-94d81058fc32a5c1cc0105bafebdce7841f5afd03d77579c257d7153bb95f437.svg', btnText: 'See our TechStack', route: '/technologies' },
+      { title: 'What we do', description: 'We help businesses create fully fledged solutions that help them achieve their business goals.', icon: 'assets/services/icon-widgets-6ced206712d1a2f4a1f086ee32c2728fc900b05bd1ea93b170ada9488633b57a.svg', btnText: 'See our Services', route: '/services' },
+      { title: 'How we do it', description: 'We use modern and efficient technologies and approaches to build stable and scalable applications', icon: 'assets/services/icon-sensor-94d81058fc32a5c1cc0105bafebdce7841f5afd03d77579c257d7153bb95f437.svg', btnText: 'See our TechStack', route: '/technologies' },
       { title: 'What we do', description: 'We were honored to work with numerous brilliant businesses to help them conquer the digital world.', icon: 'assets/services/icon-works-96e0fa59c3fd2d0090bf405e27481666d62ca0c8dbab0d33a34d4324dffa83ff.svg', btnText: 'See our Works', route: '/works' },
     ],
 

@@ -30,9 +30,9 @@
   </app-headingDesc>
 
   <div class="content-center">
-    <div class="center-align text-center p-t-70 p-b-70" *ngFor="let item of data?.availtechstack">
+    <div class="center-align text-center p-t-20" *ngFor="let item of data?.availtechstack">
       <img class="techimgheight" [src]='item.imagePath'>
-      <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
+      <div class="tittle p-t-10">{{item.title}}</div>
     </div>
   </div>
 </div>
@@ -41,19 +41,19 @@
   <app-headingDesc heading='Technology index'
     description='We use modern technologies that allow us to expertly extend and scale our products.'>
   </app-headingDesc>
-</div>
 
-<div class="section text-center">
-  <div *ngFor="let item of data?.technologyItems">
-    <h2 class="p-t-20 muted-color">{{item.title}} </h2>
-    <div>
-      <div *ngFor="let items of item.subTitle">
-        <h6>{{items.title}}</h6>
-        <div class="m-t-10 m-b-60 borderbottom"></div>
-        <div class="row">
-          <div class="col-md 2 p-t-30 p-b-30" *ngFor="let tech of items.technologies">
-            <img class="logo" [src]="tech.icon" alt="">
-            <h6 class="p-t-20 p-b-60">{{tech.title}}</h6>
+  <div class="p-t-60 text-center">
+    <div *ngFor="let item of data?.technologyItems">
+      <h2 class="p-t-30 muted-color">{{item.title}} </h2>
+      <div>
+        <div *ngFor="let items of item.subTitle">
+          <h6>{{items.title}}</h6>
+          <div class="m-t-10 m-b-60 borderbottom"></div>
+          <div class="row">
+            <div class="col-md 2 p-t-10 p-b-10" *ngFor="let tech of items.technologies">
+              <img class="logo" [src]="tech.icon" alt="">
+              <h6 class="p-t-20 p-b-60">{{tech.title}}</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -62,8 +62,8 @@
 </div>
 
 <div class="p-b-60">
-<app-headingDesc button='Talk to Us' bgprime=true (click)="routetopage('/contact')"
-  heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
+  <app-headingDesc button='Talk to Us' bgprime=true (click)="routetopage('/contact')"
+    heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
   for your business.'></app-headingDesc>
 </div>
 <app-footer type=technology></app-footer>

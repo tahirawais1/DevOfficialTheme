@@ -8,7 +8,6 @@
       <img class="imgheight" [src]='item.imagePath'>
       <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
     </div>
-
   </div>
   <app-button text="Explore our services" (click)="routetopage('/services')" type=fill width="250px" height="50px"></app-button>
 
@@ -17,16 +16,18 @@
 <div class="bignodisplay section" *ngFor="let item of workings?.workitems">
   <div class="portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
   </div>
-  <div class="p-t-20">
-    <h4> {{item?.title}}</h4>
-    <div class="subtittle p-b-30"> {{item?.description}}</div>
-    <div class="p2 p-b-60">{{item.detailPage}}</div>
-    <app-button text="See full case study" (click)="routetoDetail(item.title)" type=fill width="250px" height="50px">
-    </app-button>
+  <div class="p-t-30">
+    <h2> {{item?.title}}</h2>
+    <div class="subtittle p-b-20"> {{item?.description}}</div>
+    <p class="p-b-70">{{item.detailPage}}</p>
+    <div class="text-center">
+      <app-button text="See full case study" (click)="routetoDetail(item.title)" type=fill width="250px" height="50px">
+      </app-button>
+    </div>
   </div>
 </div>
 
-<div class="slide-in-bottom smallnodisplay section p-l-100 p-r-100">
+<div class="smallnodisplay section p-l-100 p-r-100">
   <div *ngFor="let item of workings?.workitems; let i = index">
 
     <div class="row p-t-100" *ngIf="i % 2 == 0">

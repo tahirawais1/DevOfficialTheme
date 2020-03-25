@@ -19,13 +19,13 @@
        <img class="bgNorepeat pointer" [src]='item?.imagePath'>
         <div class="pointer positionrel p-l-30 p-r-30 text-center p-t-30 p-b-30">
           <h5> {{item?.title[0]}} <br>{{item?.title[1]}}</h5>
-          <p class="p2">{{item?.description}}</p>
+          <div class="p2" >{{item?.description}}</div>
         </div>
     </div>
   </div>
 </section>
 
-<div  class="smallnodisplay section text-center p-l-60 p-r-60">
+<!-- <div  class="smallnodisplay section text-center p-l-60 p-r-60">
   <app-headingDesc heading='Distributed responsibilities. One common goal.'
     description='Each member of the Devunleash team has their own responsibilities, but we all work toward a common goal: providing you with a software solution that are the most beneficial for your businesses'>
   </app-headingDesc>
@@ -33,16 +33,11 @@
   <div class="sectionmm">
     <div class="row">
       <div class="col-md-6 ">
-        <div class="dottedBorder m-l-100">
-
-        </div>
-
+        <div class="dottedBorder m-l-85"></div>
       </div>
+
       <div class="col-md-6 ">
-        <div class="dottedBorder m-r-100">
-
-        </div>
-
+        <div class="dottedBorder m-r-85"></div>
       </div>
 
     </div>
@@ -102,7 +97,7 @@
     </div>
   </div>
 
-</div>
+</div> -->
 
 
 <div class="section bg-prime text-center m-b-60">
@@ -115,7 +110,7 @@
       <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
     </div>
   </div>
-  <app-button text="Explore our Tech Stack" (click)="routetopage('/technologies')" type=outline width="270px"
+  <app-button text="Explore our Tech Stack" (click)="routetopage('/technologies')" type=fill width="270px"
     height="50px"></app-button>
 </div>
 

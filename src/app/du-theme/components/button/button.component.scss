@@ -20,6 +20,8 @@
   padding: 0px;
   font-size: 18px;
   border-radius: 50px;
+  font-weight: 300;
+
 }
 
 .fill:hover {
@@ -46,7 +48,7 @@
 
 .outline-light {
   border-radius: 50px;
-  border: 1px solid $link-color;
+  border: 1.7px solid $link-color;
   color: $link-color;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -54,13 +56,14 @@
   vertical-align: middle;
   padding: 0px;
   font-size: 18px;
+  font-weight: 300;
 
 
 }
 
 .outline-light:hover {
   color: $primary-color;
-  border: 1px solid $link-color;
+  border: 1.7px solid $link-color;
   background-color: $link-color !important;
   box-shadow: $button-hover-shadow;
 }
