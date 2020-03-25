@@ -36,7 +36,8 @@
                 "src/app/sass"
               ]
             },
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {

@@ -1,6 +1,21 @@
 <app-header></app-header>
-
-<div class="slide-in-bottom section text-center">
+<div class="particle-slider"  id="particle-slider" data-aos="fade-up" data-aos-once="true">
+  <div class="slides">
+    <div class="slide" id="first-slide" data-src="assets/D-Day-thick-White-Edges-v2.png">
+    </div>
+  </div>
+  <canvas class="draw" style="height: 50vh;"></canvas>
+  <div class="container">
+    <div class="section__heading" data-aos="slide-left">
+      <p class="section__subtitle scale-in-bottom" data-aos="fade-up" data-aos-once="true">We help brands and businesses solve their challenges with gratifying
+        and
+        meaningful web and mobile solutions</p>
+    </div>
+  </div>
+</div>
+<div class="slide-in-bottom section text-center"  data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">
   <app-headingDesc [heading]='heading' [description]='description'></app-headingDesc>
 
   <div class="row">
@@ -9,7 +24,8 @@
       <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
     </div>
   </div>
-  <app-button text="Explore our services" (click)="routetopage('/services')" type=fill width="250px" height="50px"></app-button>
+  <app-button text="Explore our services" (click)="routetopage('/services')" type=fill width="250px" height="50px">
+  </app-button>
 
 </div>
 
@@ -87,7 +103,9 @@
     height="55px"></app-button>
 </div>
 
-<div class="p-b-60">
+<div class="p-b-60" data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">
   <app-headingDesc bgprime=true button='Contact us' (click)="routetopage('/contact')"
     heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
     for your business.'></app-headingDesc>
