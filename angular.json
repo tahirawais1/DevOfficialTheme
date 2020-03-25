@@ -28,15 +28,19 @@
               "src/assets"
             ],
             "styles": [
+              "../node_modules/aos/dist/aos.css",
               "src/styles.scss",
               "src/app/sass/_index.scss"
+
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/app/sass"
               ]
             },
-            "scripts": []
+            "scripts": [
+              "../node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {

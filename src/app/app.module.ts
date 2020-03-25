@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
@@ -11,6 +10,7 @@ import { WorksComponent } from './works/works.component';
 import { WorkDetailComponent } from './workDetail/workDetail.component';
 import { DuThemeModule } from './du-theme/du-theme.module';
 import { ServiceDetailComponent } from './serviceDetail/serviceDetail.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
    declarations: [
@@ -27,9 +27,10 @@ import { ServiceDetailComponent } from './serviceDetail/serviceDetail.component'
    imports: [
       BrowserModule,
       AppRoutingModule,
-      DuThemeModule
+      DuThemeModule,
    ],
-   providers: [],
+   providers: [
+   ],
    bootstrap: [
       AppComponent
    ]
