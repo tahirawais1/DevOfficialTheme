@@ -82,82 +82,91 @@ p{
     cursor: pointer;
     text-transform: uppercase;
 }
-// .Large-h{
-// font-size: 5.5rem;
-// font-weight: 400;
-// line-height: 1.2;
-// }
-// // font-size: calc(3em + 1.2vmin)
-// .main-h{
-// font-size: 4.4rem;
-// font-weight: 300;
-// line-height: 1.5;
-// }
-// .sec-h{
-// font-size: 4rem;
-// line-height: 1.2;
-// font-weight: 300;
-// }
-// .main-p{
-// font-size: 2.2rem;
-// line-height: 1.2;
-// font-weight: 300;
-// }
-// .sec-p{
-// font-size: 1.9rem;
-// font-weight: 300;
-// }
-// .item{
-//     font-size: 1.1rem;
-//     font-weight: 200;
-//     line-height: 1.8;
 
-
-// }
 
 @media screen and (max-width: 769px) {
 
 
 .xh1{
     font-family: Radikal,'Open Sans',sans-serif;
-    font-size: calc(5.2em + 1vmin);
+    font-size: calc(3.4em + 2.778vmin);
  }
  h1{
     font-family: Radikal,'Open Sans',sans-serif;
-    font-size: calc(5.1em + 1vmin);
+    font-size: calc(3.4em + 2.778vmin);
     font-weight: 300;
  }
  h2{
     font-family: Radikal,'Open Sans',sans-serif;
-    font-size: calc(4em + 1vmin);
+    font-size: calc(2.6em + 2.778vmin);
     font-weight: 300;
     padding-bottom:.6em;
  }
- h3{
-    font-family: Radikal,'Open Sans',sans-serif;
-     font-size: calc(3em + 1vmin);
-    font-weight: 300;
-     padding-bottom:.5em;
-  }
+//  h3{
+//     font-family: Radikal,'Open Sans',sans-serif;
+//      font-size: calc(0em + 2.778vmin);
+//     font-weight: 300;
+//      padding-bottom:.5em;
+//   }
  h4{
     font-family: Radikal,'Open Sans',sans-serif;
-    font-size: calc(2em + 1vmin);
+    font-size: calc(2.4em + 2.778vmin);
     font-weight: 300;
     padding-bottom:.4em;
  }
  
  h5{
     font-family: Radikal,'Open Sans',sans-serif;
-    font-size: calc(1.9em + 1vmin);
+    font-size: calc(2.3em + 2.778vmin);
     font-weight: 300;
      padding-bottom:.3em;
  }
- h6{
+//  h6{
+//     font-family: Radikal,'Open Sans',sans-serif;
+//     font-size: calc(0em + 2.778vmin);
+//     font-weight: 300;
+//     padding-bottom:.2em;
+//  }
+ .tittle{
     font-family: Radikal,'Open Sans',sans-serif;
-    font-size: calc(1em + 1vmin);
-    font-weight: 300;
-    padding-bottom:.2em;
+     font-size: calc(1.5em + 2.778vmin);
+     font-weight: 300;
+     padding-bottom:.1em;
  }
+ .subtittle{
+    font-family: Radikal,'Open Sans',sans-serif;
+     font-size: calc(1.3em + 2.778vmin);
+     font-weight: 200;
+ }
+ .strongP{
+    font-family: Radikal,'Open Sans',sans-serif;
+    font-size: calc(1em + 2.778vmin);
+    font-weight: 300;
+ 
+ }
+ p{
+    font-family: Radikal,'Open Sans',sans-serif;
+     font-size: calc(1em + 2.778vmin);
+     font-weight: 100;
+ }
+ .p2{
+    font-family: Radikal,'Open Sans',sans-serif;
+     font-size: calc(.6em + 2.778vmin);
+     font-weight: 200;
+     line-height: 28px;
+ }
+//  .p3{
+//     font-family: Radikal,'Open Sans',sans-serif;
+//      font-size: calc(0em + 2.778vmin);
+//      font-weight: 200;
+//  }
+//  .navLink{
+//     font-family: 'Open Sans',sans-serif;
+//      font-size: calc(0em + 2.778vmin);
+//      font-weight: 200;
+//      cursor: pointer;
+//      text-transform: uppercase;
+//  }
 
     .p-l-100{
         padding-left: 40px;
@@ -170,6 +179,12 @@ p{
     }
     .p-t-100{
         padding-top: 65px;
+    }
+    .p-t-70{
+        padding-top: 40px;
+    }
+    .p-b-70{
+        padding-bottom: 40px;
     }
 }
 
