@@ -20,10 +20,11 @@
 
 .imgwid{
     background-repeat: no-repeat;
-    max-width: 400px;
-    max-height: 400px;
-    min-height: 300px;
-    vertical-align: middle;
+    background-size: contain;
+    max-width: 800px;
+    max-height: 800px;
+    min-height: 500px;
+    vertical-align: top;
 }
 
 .m-t--30{

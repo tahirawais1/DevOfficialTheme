@@ -91,7 +91,7 @@ export class DataService {
           ['A big manufacturer company wanted to develop a supply chain platform where they can connect to their trade partners and sales team in real-time and exchange business and transaction information on-the-go. With real-time information access, on-the-go decision making and control and visibility across supply entire supply chain, they would be able to increase business efficiency and reduce loss & leakage', 'Every person in the team would have access to up-to-date real-time information on his finger-tips for on-the-go decision making, better stock management and sales automation. It would avoid delays, reduce leakage and increase business efficiency.'],
         solutiontitle: 'WHICH BUSINESSES IT HELPS',
         solitem: [{
-          img: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png',
+          img: 'assets/portfolio/tuportfolio6.png',
           title: '', details:
             [
               'Help manufacturers keep track of their inventories, sales and payment recoveries across their trade partners in real-time. Help reduce inventory cost, reduce wastage, increase sales and eliminate the cost and headache of manual operation. ',
@@ -106,21 +106,21 @@ export class DataService {
         methodology: ['Back office web application', 'Mobile application for field operations', 'Mobile app for advanced reporting and business intelligence', 'B2B e-commerce and marketplace platform'],
         moreSection: [
           {
-            tittle: 'BACK OFFICE WEB APPLICATION', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: [
+            tittle: 'BACK OFFICE WEB APPLICATION', imgPath: 'assets/portfolio/tuportfolio.png', desc: [
               'Back office web application is used to centrally manage supply chain operations with end-to-end control and visibility. It’s single page application built over APIs with offline first capability for better user experience and reduced bandwidth usage.',
               'Back office allows adding users with different roles and permissions. That’s where users can manage and keep track of their inventories, sale orders, purchase orders, customer and supplier relationships, invoices, payments, reporting and much more.']
           },
           {
-            tittle: 'MOBILE APP', imgPath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png', desc: [
+            tittle: 'MOBILE APP', imgPath: 'assets/portfolio/tuportfolio2.png', desc: [
               'Mobile app is used by the field staff to punch all their activities and transactions directly in the system instead of manual paper work. Also, they have access to the update information on product, pricing, inventory levels, customers to perform better on the field.']
           },
         ],
 
         furtherMoreTittle: 'UX Design Challenges',
         furtherMore: [
-          { desc: 'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' },
-          { desc: 'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' },
-          { desc: 'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath: 'http://tirthainfotech.com/wp-content/uploads/2019/10/mobile-application.png' },
+          { desc: 'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath: 'assets/portfolio/tu.png' },
+          { desc: 'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath: 'assets/portfolio/tuportfolio1.png' },
+          { desc: 'Our team truly understands the value a good UI/UX plays in the success of a product. We faced an interesting challenge in front as we strove to build a large and scalable platform that would automate and digitise complex supply chain operations for different type of businesses involved and platforms. We wanted to make sure system is easily navigable and all information is visible to user in clean and optimised way.', imagePath: 'assets/portfolio/tuportfolio3.png' },
         ],
         tech: 'NativeScript',
         techlogo: 'assets/content/work_cases/nstu.png',

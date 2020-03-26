@@ -1,24 +1,18 @@
 <app-header></app-header>
-<div class="particle-slider"  id="particle-slider" data-aos="fade-up" data-aos-once="true">
-  <div class="slides">
-    <div class="slide" id="first-slide" data-src="assets/D-Day-thick-White-Edges-v2.png">
+<div class="p-t-85">
+  <div class="particle-slider" id="particle-slider" data-aos="fade-up" data-aos-once="true">
+    <div class="slides">
+      <div class="slide" id="first-slide" data-src="assets/D-Day-thick-White-Edges-v2.png">
+      </div>
     </div>
-  </div>
-  <canvas class="draw" style="height: 50vh;"></canvas>
-  <div class="container">
-    <div class="section__heading" data-aos="slide-left">
-      <p class="section__subtitle scale-in-bottom" data-aos="fade-up" data-aos-once="true">We help brands and businesses solve their challenges with gratifying
-        and
-        meaningful web and mobile solutions</p>
-    </div>
+    <canvas class="draw" style="height: 50vh;"></canvas>
   </div>
 </div>
-<div class="slide-in-bottom section text-center"  data-aos="fade-down"
-data-aos-easing="linear"
-data-aos-duration="1500">
+
+<div class="section text-center">
   <app-headingDesc [heading]='heading' [description]='description'></app-headingDesc>
 
-  <div class="row">
+  <div class="row" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1500">
     <div class="col-md-4 center-align text-center  p-t-70 p-b-70" *ngFor="let item of data?.techItem">
       <img class="imgheight" [src]='item.imagePath'>
       <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
@@ -29,8 +23,8 @@ data-aos-duration="1500">
 
 </div>
 
-<div class="bignodisplay section" *ngFor="let item of workings?.workitems">
-  <div class="portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+<div class="bignodisplay section"  *ngFor="let item of workings?.workitems">
+  <div class="portfolioimg m-t-30" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
   </div>
   <div class="p-t-30">
     <h2> {{item?.title}}</h2>
@@ -47,7 +41,7 @@ data-aos-duration="1500">
   <div *ngFor="let item of workings?.workitems; let i = index">
 
     <div class="row p-t-100" *ngIf="i % 2 == 0">
-      <div class="col-md-5 portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+      <div class="col-md-5 portfolioimg m-t-30" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="900" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
       </div>
       <div class="col-md-2"></div>
       <div class="col-md-5 ">
@@ -78,7 +72,7 @@ data-aos-duration="1500">
           height="50px"></app-button>
       </div>
       <div class="col-md-2"></div>
-      <div class="col-md-5 portfolioimg m-t-30" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+      <div class="col-md-5 portfolioimg m-t-30" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="900" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
       </div>
     </div>
   </div>
@@ -103,9 +97,7 @@ data-aos-duration="1500">
     height="55px"></app-button>
 </div>
 
-<div class="p-b-60" data-aos="fade-down"
-data-aos-easing="linear"
-data-aos-duration="1500">
+<div class="p-b-60">
   <app-headingDesc bgprime=true button='Contact us' (click)="routetopage('/contact')"
     heading='Need a skillful solution provider?' description='Tell us about your needs and challenges. We&#39;ll apply our broad-ranging expertise to develop the perfect solution
     for your business.'></app-headingDesc>
