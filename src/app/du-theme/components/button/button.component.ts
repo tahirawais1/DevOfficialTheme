@@ -11,6 +11,7 @@ export class ButtonComponent implements OnInit {
   @Input() width = '100%';
   @Input() text = '';
   @Input() type = '';
+  @Input() isAnimation = 'true';
   @Input() class = '';
   @Input() backgroundColor = '';
   @Output() click = new EventEmitter<any>();

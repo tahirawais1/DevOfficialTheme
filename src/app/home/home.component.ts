@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     this.heading = this.data.headerSection.tittle;
     this.description = this.data.headerSection.description;
   }
-  routetoDetail(item){
+  routetoDetail(item) {
     this.router.navigate(['work'] , { queryParams: { item } });
     window.scrollTo(0, 0);
 

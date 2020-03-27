@@ -1,21 +1,28 @@
 <app-header></app-header>
 <div class="p-t-85">
-  <div class="particle-slider" id="particle-slider" data-aos="fade-up" data-aos-once="true">
-    <div class="slides">
-      <div class="slide" id="first-slide" data-src="assets/D-Day-thick-White-Edges-v2.png">
-      </div>
-    </div>
-    <canvas class="draw" style="height: 50vh;"></canvas>
+  <div class="display-flex align-items-center justify-content-center">
+    <img src="assets/D-Day-thick-White-Edges-v2.png">
   </div>
 </div>
+
+<!-- <div class="particle-slider" id="particle-slider" data-aos="fade-up" data-aos-once="true">
+  <div class="slides">
+    <div class="slide" id="first-slide" data-src="assets/D-Day-thick-White-Edges-v2.png">
+    </div>
+  </div>
+  <canvas class="draw" style="height: 50vh;"></canvas>
+</div>
+</div> -->
 
 <div class="section text-center">
   <app-headingDesc [heading]='heading' [description]='description'></app-headingDesc>
 
-  <div class="row" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1500">
+  <div class="row">
     <div class="col-md-4 center-align text-center  p-t-70 p-b-70" *ngFor="let item of data?.techItem">
-      <img class="imgheight" [src]='item.imagePath'>
-      <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
+      <img class="imgheight" data-aos="zoom-in" data-aos-once="true" data-aos-easing="linear" data-aos-duration="500"
+        [src]='item.imagePath'>
+      <div class="tittle p-t-30 p-b-30" data-aos="zoom-in" data-aos-once="true" data-aos-easing="linear"
+        data-aos-duration="800">{{item.title}}</div>
     </div>
   </div>
 
@@ -24,8 +31,9 @@
 
 </div>
 
-<div class="bignodisplay section"  *ngFor="let item of workings?.workitems">
-  <div class="portfolioimg m-t-30" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+<div class="bignodisplay section" *ngFor="let item of workings?.workitems">
+  <div class="portfolioimg m-t-30" data-aos="zoom-in"  data-aos-once="true" data-aos-easing="linear" data-aos-duration="1500"
+    [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
   </div>
   <div class="p-t-30">
     <h2> {{item?.title}}</h2>
@@ -42,10 +50,11 @@
   <div *ngFor="let item of workings?.workitems; let i = index">
 
     <div class="row p-t-100" *ngIf="i % 2 == 0">
-      <div class="col-md-5 portfolioimg m-t-30" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="900" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+      <div class="col-md-5 portfolioimg m-t-30" data-aos="zoom-in" data-aos-once="true" data-aos-easing="linear" data-aos-duration="900"
+        [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
       </div>
       <div class="col-md-2"></div>
-      <div class="col-md-5 ">
+      <div class="col-md-5 " data-aos="fade-left" data-aos-once="true" data-aos-easing="linear" data-aos-duration="900">
         <h2> {{item?.title}}</h2>
         <div class="tittle"> {{item?.description}}</div>
         <div class="display-flex p-t-30 p-b-30">
@@ -54,13 +63,13 @@
           </div>
         </div>
         <p class="p-b-60">{{item.detailPage}}</p>
-        <app-button text="See full case study" (click)="routetoDetail(item.title)" type=outline width="250px"
+        <app-button  isAnimation="false" text="See full case study" (click)="routetoDetail(item.title)" type=outline width="250px"
           height="50px"></app-button>
       </div>
     </div>
 
     <div class="row p-t-100" *ngIf="i % 2 == 1">
-      <div class="col-md-5 ">
+      <div class="col-md-5" data-aos="fade-right" data-aos-once="true"  data-aos-easing="linear" data-aos-duration="900">
         <h2> {{item?.title}}</h2>
         <div class="tittle  p-b-30"> {{item?.description}}</div>
         <div class="display-flex p-t-30 p-b-30">
@@ -69,11 +78,12 @@
           </div>
         </div>
         <p class="p-b-60">{{item.detailPage}}</p>
-        <app-button text="See full case study" (click)="routetoDetail(item.title)" type=outline width="250px"
+        <app-button isAnimation="false" text="See full case study" (click)="routetoDetail(item.title)" type=outline width="250px"
           height="50px"></app-button>
       </div>
       <div class="col-md-2"></div>
-      <div class="col-md-5 portfolioimg m-t-30" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="900" [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
+      <div class="col-md-5 portfolioimg m-t-30" data-aos-once="true"  data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="900"
+        [ngStyle]="{'background-image': 'url(' + item?.imagePath + ')'}">
       </div>
     </div>
   </div>
@@ -89,12 +99,40 @@
     description='Using the latest technologies, our app development company helps businesses and individuals establish their presence on any modern device and platform – Android IOS and Web.'>
   </app-headingDesc>
   <div class="row">
-    <div class="col-md-2 center-align text-center p-t-70 p-b-70" *ngFor="let item of data?.techstack">
-      <img class="techimgheight" [src]='item.imagePath'>
-      <div class="tittle p-t-30 p-b-30">{{item.title}}</div>
+
+      
+    <div class="col-md-2 center-align text-center p-t-70 p-b-70">
+      <img class="techimgheight" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="300" src='assets/services/agile-approach.svg'>
+      <div class="tittle p-t-30 p-b-30" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="300">Agile approach</div>
     </div>
+
+    <div class="col-md-2 center-align text-center p-t-70 p-b-70">
+      <img class="techimgheight" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500" src='assets/services/communication.svg'>
+      <div class="tittle p-t-30 p-b-30" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">Personal commitment</div>
+    </div>
+
+    <div class="col-md-2 center-align text-center p-t-70 p-b-70">
+      <img class="techimgheight" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="600" src='assets/services/expertise.svg'>
+      <div class="tittle p-t-30 p-b-30" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="600">Deep tech expertise</div>
+    </div>
+
+    <div class="col-md-2 center-align text-center p-t-70 p-b-70">
+      <img class="techimgheight" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="700" src='assets/services/reporting.svg'>
+      <div class="tittle p-t-30 p-b-30" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="700">Regular Reporting</div>
+    </div>
+    
+    <div class="col-md-2 center-align text-center p-t-70 p-b-70">
+      <img class="techimgheight" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="800" src='assets/services/scalability.svg'>
+      <div class="tittle p-t-30 p-b-30" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="800">Scalability</div>
+    </div>
+
+    <div class="col-md-2 center-align text-center p-t-70 p-b-70">
+      <img class="techimgheight" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="900" src='assets/services/tracking.svg'>
+      <div class="tittle p-t-30 p-b-30" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true" data-aos-duration="900">Time tracking</div>
+    </div>
+    
   </div>
-  <app-button text="Explore our Tech Stack" (click)="routetopage('/technologies')" type=outline width="270px"
+  <app-button  text="Explore our Tech Stack" (click)="routetopage('/technologies')" type=outline width="270px"
     height="55px"></app-button>
 </div>
 
